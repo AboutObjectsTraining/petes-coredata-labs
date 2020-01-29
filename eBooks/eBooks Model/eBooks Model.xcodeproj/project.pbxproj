@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7F08ECC823DF905E00481626 /* ManagedObjectModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08ECC723DF905E00481626 /* ManagedObjectModelTests.m */; };
 		7FA2F50423E0C24C00D86EB4 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B5B5F121FBBA6200E453E5 /* ModelTests.swift */; };
+		7FCD71FA23E210340060E902 /* PersistentContainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCD71F923E210340060E902 /* PersistentContainerTests.m */; };
 		B42484CD21FE2BEF00EDCB93 /* DateTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42484CC21FE2BEF00EDCB93 /* DateTransformer.swift */; };
 		B42484CF21FE2C6300EDCB93 /* StringTransformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42484CE21FE2C6300EDCB93 /* StringTransformable.swift */; };
 		B42484D121FE325F00EDCB93 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42484D021FE325F00EDCB93 /* Globals.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		7F08ECC623DF905E00481626 /* eBooksModelTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eBooksModelTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		7F08ECC723DF905E00481626 /* ManagedObjectModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagedObjectModelTests.m; sourceTree = "<group>"; };
+		7FCD71F923E210340060E902 /* PersistentContainerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistentContainerTests.m; sourceTree = "<group>"; };
 		B42484CC21FE2BEF00EDCB93 /* DateTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTransformer.swift; sourceTree = "<group>"; };
 		B42484CE21FE2C6300EDCB93 /* StringTransformable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTransformable.swift; sourceTree = "<group>"; };
 		B42484D021FE325F00EDCB93 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				7F08ECC723DF905E00481626 /* ManagedObjectModelTests.m */,
+				7FCD71F923E210340060E902 /* PersistentContainerTests.m */,
 				7F08ECC623DF905E00481626 /* eBooksModelTests-Bridging-Header.h */,
 			);
 			path = "Obj-C Tests";
@@ -368,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCD71FA23E210340060E902 /* PersistentContainerTests.m in Sources */,
 				7FA2F50423E0C24C00D86EB4 /* ModelTests.swift in Sources */,
 				B426F5DB21F910EF0094BD76 /* JsonTransformationTests.swift in Sources */,
 				7F08ECC823DF905E00481626 /* ManagedObjectModelTests.m in Sources */,

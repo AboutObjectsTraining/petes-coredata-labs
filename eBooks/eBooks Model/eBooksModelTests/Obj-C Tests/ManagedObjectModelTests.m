@@ -86,3 +86,12 @@
     printf("\n");
 }
 @end
+
+
+
+//What do I need to create an instance of NSManagedObjectModel?
+//      I need mergedModelFromBundles which merges all specified bundles
+//      I also need modelByMergingModels which combines them all
+//      init method [relies on initWithContentsOfURL]
+
+
