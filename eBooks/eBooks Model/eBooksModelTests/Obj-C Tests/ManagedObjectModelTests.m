@@ -18,26 +18,25 @@
 
 @implementation ManagedObjectModelTests
 
-- (void)setUp {
-    //make the easy things simple and the hard things possible
-
+- (void) setUp {
+    //Gathers the bundle URL and creates an instance of the model
     NSBundle *bundle = [NSBundle bundleForClass:ManagedObject.class];
     NSURL *modelURL = [bundle URLForResource:@"eBooks" withExtension:@"momd"];
     self.model = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
 }
 
-- (void)testStuff {
+- (void) testStuff {
     //testing some c code
     int x = 3, *y = &x, **z = &y;
     printf("\n");
     printf("%d, %p, %p\n", x, y, z);
 }
 
-- (void)testBundlePath {
+- (void) testBundlePath {
     //gets app directory bundle on whatever system you run the app on
-    //NSLog(@"%@", NSBundle.mainBundle);
+        //NSLog(@"%@", NSBundle.mainBundle);
     //gets bundle directory of the testing framework
-    //NSLog(@"%@", [NSBundle bundleForClass:ManagedObject.class]);
+        //NSLog(@"%@", [NSBundle bundleForClass:ManagedObject.class]);
     
     // getting main bundle in its current location to get the path for the instance of it
     NSBundle *bundle = [NSBundle bundleForClass:ManagedObject.class];
@@ -50,7 +49,7 @@
     NSLog(@"%@", self.model);
 }
 
-- (void)testEntityNameFormat {
+- (void) testEntityDescriptionFormat {
     for (NSEntityDescription *entity in self.model.entities) {
         printf("\n Entity: %s"
                "\n --------------------"
@@ -71,12 +70,9 @@
     printf("\n");
 }
 
-- (void)testEntityDescriptions {
+- (void) testEntityDescriptions {
     //Loops through & organizes the different attributes of the bundle
-    
     for (NSEntityDescription *entity in self.model.entities) {
-        //What's the most basic way to do this?
-        //Print out one line at a time
         NSLog(@"Entities by name: %@", entity.name);
         printf("\n");
         for (NSPropertyDescription *attribute in entity.propertiesByName) {
@@ -86,31 +82,7 @@
         for (NSRelationshipDescription *relationship in entity.relationshipsByName) {
             NSLog(@"Relationships by name: %@", relationship);
         }
-
-    //    NSPropertyDescription *attribute = [[NSPropertyDescription alloc] description : self.name];
-        //im supposed to create a model of the entities and go into their containers and grab the name?
     }
     printf("\n");
-    }
-
+}
 @end
-
-// URL :
-// initWithPath
-//
-
-//- (instancetype)init NS_DESIGNATED_INITIALIZER;
-//- (nullable instancetype)initWithContentsOfURL : (NSURL *)url;
-
-
-
-//What do I need to create an instance of NSManagedObjectModel?
-//      I need mergedModelFromBundles which merges all specified bundles
-//      I also need modelByMergingModels which combines them all
-//      init method [relies on initWithContentsOfURL]
-
-
-//cmd shift o is Quick Search
-//use nsbundle to find the path of the model to init it NSBundle API
-//get URL // print it then
-
