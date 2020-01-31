@@ -5,7 +5,7 @@ Core Data Lab Questions/Solutions by Pete
 • How do I connect my project to a git repo that has already been established? 
 
       // When creating this project I think I just copied it from the mountainview directory
-      // and now I cannot get a handle on uploading my new code to git 
+      // and now I cannot get a handle on uploading my new code to git. High priority
       
 • How to deallocate memory? 
 
@@ -26,7 +26,5 @@ Core Data Lab Questions/Solutions by Pete
 • What is sprintf? 
 
       // writes formattred data to string 
-      
-      
       
       
