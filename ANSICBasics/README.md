@@ -2,6 +2,11 @@ Core Data Lab Questions/Solutions by Pete
 
 1.31.20 --
 
+• How do I connect my project to a git repo that has already been established? 
+
+      // When creating this project I think I just copied it from the mountainview directory
+      // and now I cannot get a handle on uploading my new code to git 
+      
 • How to deallocate memory? 
 
       // free() doesn't seem to exist and realloc(void *, unsigned long)             
