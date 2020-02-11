@@ -5,43 +5,44 @@
 //  Created by Peter Victoratos on 1/30/20.
 //  Copyright © 2020 About Objects. All rights reserved.
 //
-#include <stdio.h>
 
+#include <stdlib.h>
 #include "Utilities.h"
 #include "Person.h"
+#include "Pointers.h"
 
 void RunPointers01(void)
 {
     PRINT_FUNCTION_NAME;
-    
-    Person *p1 = AllocPerson();
-    printf("First Name: %s\n Last Name: %s\n Age: %d\n", p1->firstName, p1->lastName, p1->age);
-    
-    InitPerson(p1, "Sue", "Wilson", 29);
-    printf("Name: %s %s, Age: %d\n", p1->firstName, p1->lastName, p1->age);
+
+    Person *p1 = InitPerson(AllocPerson(), "Sue", "Wilson", 29);
+    printf("Name: %s %s, Age: %d\n", p1-> firstName, p1->lastName, p1->age);
     
     Person *p2 = InitPerson(AllocPerson(), "Fred", "Flintstone", 41);
-    printf("Name: %s %s, Age: %d\n", p1->firstName, p1->lastName, p1->age);
+    printf("Name: %s %s, Age: %d\n", p2->firstName, p2->lastName, p2->age);
     
-    //don't forget to free willy!
-    //free(p1);
-    //why'd they take away 'free'? :(
-    realloc(p1, 0);
-    realloc(p2, 0);
-    
+    free(p1);
+    free(p2);
 }
 
 void RunPointers02(void)
 {
     PRINT_FUNCTION_NAME;
     
-    Person *p1 = InitPerson(AllocPerson(), "Fred", "Smith", 32);
-    const char *description = CreateDescriptionOfPerson(p1);
+    Person *p1 = InitPerson(AllocPerson(),
+                            "Fred",
+                            "Flintstone",
+                            32);
+    char *description = CreateDescriptionOfPerson(p1);
     
     printf("%s\n", description);
+    printf("%p\n", &p1);
     
-    realloc(p1, 0);
-    realloc(description, 0);
+    free(p1);
+    free(description);
+    
+    printf("%s\n", description);
+    printf("%p\n", &p1);
 }
 
 void RunPointers03(void)
