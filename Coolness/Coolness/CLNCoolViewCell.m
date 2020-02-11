@@ -15,9 +15,10 @@ const UIEdgeInsets CLNTextInsets = {
     .right = 12
 };
 
-// FIXME:- handle case when user has text entered in the textfield but puts an image
+// FIXME:- handle case when user has text entered in the textfield but puts an image by not adding text to cell
 
-@interface CLNCoolViewCell ()
+//UIColor to set background image
+@interface CLNCoolViewCell () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (getter=isHighlighted, assign, nonatomic) BOOL highlighted;
 @property (class, readonly, nonatomic) NSDictionary *textAttributes;
 //should add a content view to hold the image
@@ -73,6 +74,9 @@ const UIEdgeInsets CLNTextInsets = {
     self.transform = CGAffineTransformRotate(translation, M_PI_2);
 }
 
+//set self.transform to CAaffineidentity
+//also animate with duration
+
 - (void)animateBounceWithDuration:(NSTimeInterval)duration size:(CGSize)size {
     //we have no idea where the self cBWS:size call will go, it could go out of scope. To guard against that,
     //we will create a weak version of self 
@@ -83,8 +87,13 @@ const UIEdgeInsets CLNTextInsets = {
                     //animations:^{ [self configureBounceWithSize:size]; }
                      animations:^{ [weakSelf configureBounceWithSize:size]; }
                      completion:nil];
-    
-    
+}
+
+- (void)endAnimation:(NSTimeInterval)duration {
+    typeof(self) __weak weakSelf = self;
+    [UIView animateWithDuration:duration animations:^{
+        [weakSelf setTransform:CGAffineTransformIdentity];
+    }];
 }
 // MARK: - Image import
 
@@ -93,8 +102,9 @@ const UIEdgeInsets CLNTextInsets = {
     imagePicker.allowsEditing = YES;
     imagePicker.delegate = self;
     imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    
 }
+
+
 
 
 
@@ -105,11 +115,6 @@ const UIEdgeInsets CLNTextInsets = {
     [self sizeToFit];
 }
 
-// Should resize the image that is chosen to be a small square, formatted with the same cool cell
-- (CGSize)imageSizeThatFits:(CGSize *)rect{
-//    CGImageCreateWithImageInRect(<#CGImageRef  _Nullable image#>, <#CGRect rect#>)
-    return *rect;
-}
 
 // Should create a random cool cell color chooser
 

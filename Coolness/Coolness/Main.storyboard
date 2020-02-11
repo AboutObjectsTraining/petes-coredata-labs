@@ -38,6 +38,10 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" name="Content Color"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jTu-rv-deB" appends="YES" id="7td-kd-evi"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pg1-0E-AmV" userLabel="Accessory View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
@@ -114,9 +118,16 @@
                         <outlet property="contentView" destination="LPz-DW-KZk" id="2bE-ld-Oqq"/>
                         <outlet property="segmentedContol" destination="bIR-P1-gRZ" id="sdC-fV-WaJ"/>
                         <outlet property="textField" destination="3nI-Eu-Mex" id="vzM-l5-fQf"/>
+                        <outletCollection property="cells" destination="2uy-X8-F2t" collectionClass="NSMutableArray" id="CTQ-xp-iJw"/>
+                        <outletCollection property="cells" destination="dKR-uO-I1X" collectionClass="NSMutableArray" id="HVX-XX-BCO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22o-xd-6XA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="jTu-rv-deB">
+                    <connections>
+                        <action selector="endAnimations" destination="vsW-C7-iNc" id="2if-Bo-KuS"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1134.7826086956522" y="-1541.5178571428571"/>
         </scene>
