@@ -10,6 +10,10 @@
 		7FBD927123F1E331003717BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD927023F1E331003717BF /* main.m */; };
 		7FBD927E23F1E86B003717BF /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD927D23F1E86B003717BF /* UnitTests.m */; };
 		7FBD928A23F1F8A8003717BF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD928523F1E97A003717BF /* Person.m */; };
+		7FFF60AD23F338E70089FFEB /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF60AC23F338E70089FFEB /* Dog.m */; };
+		7FFF60B023F33E770089FFEB /* DogOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF60AF23F33E770089FFEB /* DogOwner.m */; };
+		7FFF60B423F342D40089FFEB /* DogOwnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF60B323F342D40089FFEB /* DogOwnerTests.m */; };
+		7FFF60B723F396D40089FFEB /* NSArray+LABAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF60B623F396D40089FFEB /* NSArray+LABAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +36,13 @@
 		7FBD927F23F1E86B003717BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FBD928523F1E97A003717BF /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		7FBD928723F1F1CA003717BF /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		7FFF60AB23F338E70089FFEB /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		7FFF60AC23F338E70089FFEB /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		7FFF60AE23F33E770089FFEB /* DogOwner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogOwner.h; sourceTree = "<group>"; };
+		7FFF60AF23F33E770089FFEB /* DogOwner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogOwner.m; sourceTree = "<group>"; };
+		7FFF60B323F342D40089FFEB /* DogOwnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogOwnerTests.m; sourceTree = "<group>"; };
+		7FFF60B523F396D40089FFEB /* NSArray+LABAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+LABAdditions.h"; sourceTree = "<group>"; };
+		7FFF60B623F396D40089FFEB /* NSArray+LABAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LABAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +94,14 @@
 			children = (
 				7FBD928723F1F1CA003717BF /* Person.h */,
 				7FBD928523F1E97A003717BF /* Person.m */,
+				7FFF60AB23F338E70089FFEB /* Dog.h */,
+				7FFF60AC23F338E70089FFEB /* Dog.m */,
+				7FFF60AE23F33E770089FFEB /* DogOwner.h */,
+				7FFF60AF23F33E770089FFEB /* DogOwner.m */,
 				7FBD927D23F1E86B003717BF /* UnitTests.m */,
+				7FFF60B323F342D40089FFEB /* DogOwnerTests.m */,
+				7FFF60B523F396D40089FFEB /* NSArray+LABAdditions.h */,
+				7FFF60B623F396D40089FFEB /* NSArray+LABAdditions.m */,
 				7FBD927F23F1E86B003717BF /* Info.plist */,
 			);
 			path = UnitTests;
@@ -185,7 +203,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFF60B423F342D40089FFEB /* DogOwnerTests.m in Sources */,
+				7FFF60AD23F338E70089FFEB /* Dog.m in Sources */,
 				7FBD928A23F1F8A8003717BF /* Person.m in Sources */,
+				7FFF60B023F33E770089FFEB /* DogOwner.m in Sources */,
+				7FFF60B723F396D40089FFEB /* NSArray+LABAdditions.m in Sources */,
 				7FBD927E23F1E86B003717BF /* UnitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
