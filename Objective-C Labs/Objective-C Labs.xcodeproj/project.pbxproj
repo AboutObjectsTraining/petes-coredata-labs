@@ -10,6 +10,7 @@
 		7FBD927123F1E331003717BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD927023F1E331003717BF /* main.m */; };
 		7FBD927E23F1E86B003717BF /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD927D23F1E86B003717BF /* UnitTests.m */; };
 		7FBD928A23F1F8A8003717BF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD928523F1E97A003717BF /* Person.m */; };
+		7FED26C223F5837300380428 /* PETHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FED26C123F5837300380428 /* PETHouse.m */; };
 		7FFF60AD23F338E70089FFEB /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF60AC23F338E70089FFEB /* Dog.m */; };
 		7FFF60B023F33E770089FFEB /* DogOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF60AF23F33E770089FFEB /* DogOwner.m */; };
 		7FFF60B423F342D40089FFEB /* DogOwnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFF60B323F342D40089FFEB /* DogOwnerTests.m */; };
@@ -36,6 +37,8 @@
 		7FBD927F23F1E86B003717BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FBD928523F1E97A003717BF /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		7FBD928723F1F1CA003717BF /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		7FED26C023F5837300380428 /* PETHouse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PETHouse.h; sourceTree = SOURCE_ROOT; };
+		7FED26C123F5837300380428 /* PETHouse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PETHouse.m; sourceTree = SOURCE_ROOT; };
 		7FFF60AB23F338E70089FFEB /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		7FFF60AC23F338E70089FFEB /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		7FFF60AE23F33E770089FFEB /* DogOwner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogOwner.h; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 		7FBD927C23F1E86B003717BF /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				7FED26C023F5837300380428 /* PETHouse.h */,
+				7FED26C123F5837300380428 /* PETHouse.m */,
 				7FBD928723F1F1CA003717BF /* Person.h */,
 				7FBD928523F1E97A003717BF /* Person.m */,
 				7FFF60AB23F338E70089FFEB /* Dog.h */,
@@ -203,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FED26C223F5837300380428 /* PETHouse.m in Sources */,
 				7FFF60B423F342D40089FFEB /* DogOwnerTests.m in Sources */,
 				7FFF60AD23F338E70089FFEB /* Dog.m in Sources */,
 				7FBD928A23F1F8A8003717BF /* Person.m in Sources */,
