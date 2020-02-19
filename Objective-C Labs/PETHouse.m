@@ -35,4 +35,20 @@
 
 @implementation PETHouse
 
++ (instancetype)houseWithInformation:(NSString *)streetName streetType:(NSString *)streetType addressNumber:(int)addressNumber owner:(Person *)houseOwner{
+    return [[self alloc] initWithHouseInformation:streetName streetType:streetType addressNumber:addressNumber owner:houseOwner];
+}
+
+- (id)initWithHouseInformation:(NSString *)streetName streetType:(NSString *)streetType addressNumber:(int)addressNumber owner:(Person *)houseOwner{
+    self = [super init];
+    if (!self) return nil;
+    
+    _streetName = [streetName copy];
+    _streetType = [streetType copy];
+    _addressNumber = addressNumber;
+    _houseOwner = [houseOwner copy];
+    
+    return self;
+}
+
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F71DC3A23FD8E9100798CF6 /* HouseOwnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71DC3923FD8E9100798CF6 /* HouseOwnerTests.m */; };
 		7FBD927123F1E331003717BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD927023F1E331003717BF /* main.m */; };
 		7FBD927E23F1E86B003717BF /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD927D23F1E86B003717BF /* UnitTests.m */; };
 		7FBD928A23F1F8A8003717BF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBD928523F1E97A003717BF /* Person.m */; };
@@ -30,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7F71DC3923FD8E9100798CF6 /* HouseOwnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HouseOwnerTests.m; sourceTree = "<group>"; };
 		7FBD926D23F1E331003717BF /* Objective-C Labs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Objective-C Labs"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBD927023F1E331003717BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FBD927B23F1E86B003717BF /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 				7FFF60AF23F33E770089FFEB /* DogOwner.m */,
 				7FBD927D23F1E86B003717BF /* UnitTests.m */,
 				7FFF60B323F342D40089FFEB /* DogOwnerTests.m */,
+				7F71DC3923FD8E9100798CF6 /* HouseOwnerTests.m */,
 				7FFF60B523F396D40089FFEB /* NSArray+LABAdditions.h */,
 				7FFF60B623F396D40089FFEB /* NSArray+LABAdditions.m */,
 				7FBD927F23F1E86B003717BF /* Info.plist */,
@@ -214,6 +217,7 @@
 				7FBD928A23F1F8A8003717BF /* Person.m in Sources */,
 				7FFF60B023F33E770089FFEB /* DogOwner.m in Sources */,
 				7FFF60B723F396D40089FFEB /* NSArray+LABAdditions.m in Sources */,
+				7F71DC3A23FD8E9100798CF6 /* HouseOwnerTests.m in Sources */,
 				7FBD927E23F1E86B003717BF /* UnitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
