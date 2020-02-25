@@ -20,17 +20,17 @@
 
 - (void)growl
 {
-    printf("%s: Grrrrr!\n", [self.name UTF8String]);
+    printf("%s: Grrrrr!\n", self.name.UTF8String);
 }
 
 - (void)bark
 {
-    printf("%s: Woof! Woof!\n", [self.name UTF8String]);
+    printf("%s: Woof! Woof!\n", self.name.UTF8String);
 }
 
 - (void)wagTail
 {
-    printf("%s: [Wags tail.]\n", [self.name UTF8String]);
+    printf("%s: [Wags tail.]\n", self.name.UTF8String);
 }
 
 
@@ -39,29 +39,29 @@
     return self.name;
 }
 
-- (id<DogDelegate>)delegate {
-    return _delegate;
-}
-
-- (void)setDelegate:(id<DogDelegate>)delegate {
-    _delegate = delegate;
-}
+//- (id<DogDelegate>)delegate {
+//    return _delegate;
+//}
+//
+//- (void)setDelegate:(id<DogDelegate>)delegate {
+//    _delegate = delegate;
+//}
 
 - (void)doorbellDidRing
 {
     [self growl];
-    [_delegate dogDidHearDoorbell:self];
+    [self.delegate dogDidHearDoorbell:self];
     
-    if (_delegate == nil || [_delegate dogShouldBark:self]) {
+    if (self.delegate == nil || [self.delegate dogShouldBark:self]) {
         [self bark];
     }
     
-    if (_delegate == nil || [_delegate dogShouldWagTail:self]) {
+    if (self.delegate == nil || [self.delegate dogShouldWagTail:self]) {
         [self wagTail];
     }
 }
 
 - (void)sit {
-    printf("%s: [Sits.]\n", [self.name UTF8String]);
+    printf("%s: [Sits.]\n", self.name.UTF8String);
 }
 @end

@@ -12,19 +12,19 @@
 
 @property (copy, nonatomic) NSString *firstName;
 @property (copy, nonatomic) NSString *lastName;
-@property (assign, nonatomic) int age;
+@property (assign, nonatomic) NSUInteger age;
 
 @property (readonly, nonatomic) NSString *fullName;
 
-- (id)initWithFullName:(NSString *)firstName
+- (id)initWithFirstName:(NSString *)firstName
               lastName:(NSString *)lastName
-                   age:(int)age;
+                   age:(NSUInteger)age;
 
 -(void)display;
 
-+ (instancetype)personWithFullName:(NSString *)firstName
++ (instancetype)personWithFirstName:(NSString *)firstName
                           lastName:(NSString *)lastName
-                               age:(int)age;
+                               age:(NSUInteger)age;
 
 @property (assign, nonatomic) NSUInteger rating;
 @property (readonly, nonatomic) NSString *ratingStars;

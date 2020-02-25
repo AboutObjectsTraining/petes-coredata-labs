@@ -8,28 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
-@class Dog;
+@protocol DogDelegate;
+
+@interface Dog : NSObject
+
+@property (weak, nonatomic) id<DogDelegate> delegate;
+@property (copy, nonatomic) NSString *name;
+
+- (id)initWithName:(NSString *)name;
+- (void)sit;
+- (void)doorbellDidRing;
+
+@end
 
 @protocol DogDelegate <NSObject>
 
 - (void)dogDidHearDoorbell:(Dog *)dog;
 - (BOOL)dogShouldBark:(Dog *)dog;
 - (BOOL)dogShouldWagTail:(Dog *)dog;
-
-@end
-@interface Dog : NSObject
-{
-    id<DogDelegate> _delegate;
-}
-
-@property (copy, nonatomic) NSString *name;
-- (void)sit;
-
-- (id)initWithName:(NSString *)name;
-
-- (void)doorbellDidRing;
-
-- (id<DogDelegate>)delegate;
-- (void)setDelegate:(id<DogDelegate>)delegate;
 
 @end

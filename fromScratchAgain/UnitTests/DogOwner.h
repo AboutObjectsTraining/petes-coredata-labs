@@ -12,8 +12,6 @@
 
 @interface DogOwner : Person <DogDelegate>
 
-@property (nonatomic) NSMutableArray *dogs;
-
 -(void)addDogs:(NSArray *)newDogs;
 
 @end

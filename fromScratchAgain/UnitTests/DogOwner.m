@@ -8,7 +8,18 @@
 
 #import "DogOwner.h"
 
+@interface DogOwner ()
+@property (strong, nonatomic) NSMutableArray *dogs;
+@end
+
 @implementation DogOwner
+
+- (NSMutableArray *)dogs {
+    if (_dogs == nil) {
+        _dogs = [[NSMutableArray alloc] init];
+    }
+    return _dogs;
+}
 
 - (void)addDogs:(NSArray *)newDogs
 {

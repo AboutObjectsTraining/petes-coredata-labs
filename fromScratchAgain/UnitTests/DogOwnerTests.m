@@ -7,9 +7,13 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "NSArray.h"
+#import "NSArray+LABAdditions.h"
 #import "DogOwner.h"
 #import "Dog.h"
+
+@interface DogOwner ()
+@property NSMutableArray *dogs;
+@end
 
 @interface DogOwnerTests : XCTestCase
 
@@ -28,13 +32,11 @@
     //is it becuase we are dealing with private member variables?
     //the only ivar is a private pointerh here..
     
-    _owner = [[DogOwner alloc] initWithFullName:@"Fred" lastName:@"Flintstone" age:41];
+    _owner = [[DogOwner alloc] initWithFirstName:@"Fred" lastName:@"Flintstone" age:41];
     
-    Dog *bowser = [[Dog alloc] initWithName:@"Bowser"];
-    Dog *foofie = [[Dog alloc] initWithName:@"foofie"];
-    Dog *spot = [[Dog alloc] initWithName:@"Spot"];
-    
-    [_owner addDogs:@[bowser, foofie, spot]];
+    [_owner addDogs:@[[[Dog alloc] initWithName:@"Bowser"],
+                      [[Dog alloc] initWithName:@"Foofie"],
+                      [[Dog alloc] initWithName:@"Spot"]]];
 }
 
 - (void)testPart01

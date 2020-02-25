@@ -13,7 +13,7 @@
 		7F71DC3023FC8EF200798CF6 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71DC2F23FC8EF200798CF6 /* Dog.m */; };
 		7F71DC3323FC8FB500798CF6 /* DogOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71DC3223FC8FB500798CF6 /* DogOwner.m */; };
 		7F71DC3523FC931100798CF6 /* DogOwnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71DC3423FC931100798CF6 /* DogOwnerTests.m */; };
-		7F71DC3823FC932B00798CF6 /* NSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71DC3723FC932B00798CF6 /* NSArray.m */; };
+		7F71DC3823FC932B00798CF6 /* NSArray+LABAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F71DC3723FC932B00798CF6 /* NSArray+LABAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,8 +41,8 @@
 		7F71DC3123FC8FB500798CF6 /* DogOwner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogOwner.h; sourceTree = "<group>"; };
 		7F71DC3223FC8FB500798CF6 /* DogOwner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogOwner.m; sourceTree = "<group>"; };
 		7F71DC3423FC931100798CF6 /* DogOwnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogOwnerTests.m; sourceTree = "<group>"; };
-		7F71DC3623FC932B00798CF6 /* NSArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArray.h; sourceTree = "<group>"; };
-		7F71DC3723FC932B00798CF6 /* NSArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArray.m; sourceTree = "<group>"; };
+		7F71DC3623FC932B00798CF6 /* NSArray+LABAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+LABAdditions.h"; sourceTree = "<group>"; };
+		7F71DC3723FC932B00798CF6 /* NSArray+LABAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LABAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 				7F71DC3223FC8FB500798CF6 /* DogOwner.m */,
 				7F71DC2523FC2CF600798CF6 /* UnitTests.m */,
 				7F71DC3423FC931100798CF6 /* DogOwnerTests.m */,
-				7F71DC3623FC932B00798CF6 /* NSArray.h */,
-				7F71DC3723FC932B00798CF6 /* NSArray.m */,
+				7F71DC3623FC932B00798CF6 /* NSArray+LABAdditions.h */,
+				7F71DC3723FC932B00798CF6 /* NSArray+LABAdditions.m */,
 				7F71DC2723FC2CF600798CF6 /* Info.plist */,
 			);
 			path = UnitTests;
@@ -205,7 +205,7 @@
 			files = (
 				7F71DC3523FC931100798CF6 /* DogOwnerTests.m in Sources */,
 				7F71DC3023FC8EF200798CF6 /* Dog.m in Sources */,
-				7F71DC3823FC932B00798CF6 /* NSArray.m in Sources */,
+				7F71DC3823FC932B00798CF6 /* NSArray+LABAdditions.m in Sources */,
 				7F71DC2D23FC2D4500798CF6 /* Person.m in Sources */,
 				7F71DC3323FC8FB500798CF6 /* DogOwner.m in Sources */,
 				7F71DC2623FC2CF600798CF6 /* UnitTests.m in Sources */,

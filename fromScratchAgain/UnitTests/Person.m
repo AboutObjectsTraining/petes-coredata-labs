@@ -8,9 +8,11 @@
 
 #import "Person.h"
 
+const NSUInteger FSAMaxRating = 5;
+
 @implementation Person
 
-- (id)initWithFullName:(NSString *)firstName lastName:(NSString *)lastName age:(int)age
+- (id)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName age:(NSUInteger)age
 {
     self = [super init];
     if (!self) return nil;
@@ -22,8 +24,8 @@
     return self;
 }
 
-+ (instancetype)personWithFullName:(NSString *)firstName lastName:(NSString *)lastName age:(int)age{
-    return [self.alloc initWithFullName:firstName lastName:lastName age:age];
++ (instancetype)personWithFirstName:(NSString *)firstName lastName:(NSString *)lastName age:(NSUInteger)age{
+    return [self.alloc initWithFirstName:firstName lastName:lastName age:age];
 }
 
 - (NSString *)fullName{
@@ -31,18 +33,16 @@
 }
 
 - (NSString *)description{
-    return [NSString stringWithFormat:@"\n%@, %d years old.", self.fullName, self.age];
+    return [NSString stringWithFormat:@"\n%@, %lu years old.", self.fullName, (unsigned long)self.age];
 }
 
 - (void)display {
-    printf("%s\n", [self.description UTF8String]);
+    printf("%s\n", self.description.UTF8String);
 }
-
-const NSUInteger MaxRating = 5;
 
 - (void)setRating:(NSUInteger)newValue
 {
-    _rating = newValue > MaxRating ? MaxRating : newValue;
+    _rating = newValue > FSAMaxRating ? FSAMaxRating : newValue;
 }
 
 - (NSString *)ratingStars

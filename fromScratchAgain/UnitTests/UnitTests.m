@@ -21,7 +21,7 @@
     fred.lastName = @"Flintstone";
     fred.age = 41;
     
-    NSLog(@"\n%@ %@ is %d years old.", fred.firstName, fred.lastName, fred.age);
+    NSLog(@"\n%@ %@ is %lu years old.", fred.firstName, fred.lastName, fred.age);
 }
 
 - (void)testPart02{
@@ -37,36 +37,46 @@
 
 - (void)testPart03
 {
-    NSArray *people = @[[Person personWithFullName:@"Fred" lastName:@"Flintstone" age:41], [Person personWithFullName:@"Barney" lastName:@"Rubble" age:38],        [Person personWithFullName:@"George" lastName:@"Slate" age:54]];
+    NSArray *people = @[[Person personWithFirstName:@"Fred" lastName:@"Flintstone" age:41],
+                        [Person personWithFirstName:@"Barney"
+                                           lastName:@"Rubble" age:38],
+                        [Person personWithFirstName:@"George"
+                                           lastName:@"Slate" age:54]];
     
-    for (Person *current in people)
+    for (Person *person in people)
     {
-        [current display];
+        [person display];
     }
 }
 
 - (void)testPart04
 {
-    NSArray *people = @[[Person personWithFullName:@"Fred" lastName:@"Smith" age:32],
-                        [Person personWithFullName:@"Jill" lastName:@"Brown" age:27],
-                        [Person personWithFullName:@"Lee" lastName:@"Jones" age:41],
-                        [Person personWithFullName:@"Greg" lastName:@"Moore" age:25],
-                        [Person personWithFullName:@"Sue" lastName:@"Davis" age:36]];
+    NSArray *people = @[[Person personWithFirstName:@"Fred" lastName:@"Smith" age:32],
+                        [Person personWithFirstName:@"Jill" lastName:@"Brown" age:27],
+                        [Person personWithFirstName:@"Lee" lastName:@"Jones" age:41],
+                        [Person personWithFirstName:@"Greg" lastName:@"Moore" age:25],
+                        [Person personWithFirstName:@"Sue" lastName:@"Davis" age:36]];
     [people[0] setRating:3];
     [people[1] setRating:999];
     [people[2] setRating:0];
     [people[3] setRating:3];
     [people[4] setRating:4];
+    
     printf("\nPeople:\n-------\n");
+    
     for (Person *currPerson in people) {
         [currPerson display];
     }
-    NSSortDescriptor *sortDesc = [NSSortDescriptor
-    sortDescriptorWithKey:@"rating"ascending:NO];
+    
+    NSSortDescriptor *sortDesc = [NSSortDescriptor sortDescriptorWithKey:@"rating"ascending:NO];
     NSArray *sortedPeeps = [people sortedArrayUsingDescriptors:@[sortDesc]];
-    printf("\nSorted People:\n--------------\n"); for (Person *currPerson in sortedPeeps) {
+    
+    printf("\nSorted People:\n--------------\n");
+    
+    for (Person *currPerson in sortedPeeps) {
         [currPerson display];
     }
+    
     [sortedPeeps makeObjectsPerformSelector:@selector(display)];
 }
 
