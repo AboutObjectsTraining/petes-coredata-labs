@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,71 +12,105 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NCVViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vtp-j8-6HF" userLabel="ContentView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vtp-j8-6HF" userLabel="ContentView">
                                 <rect key="frame" x="0.0" y="91" width="414" height="805"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y1c-IG-Nm1" customClass="NVCCoolViewCell">
-                                        <rect key="frame" x="45" y="133" width="240" height="60"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y1c-IG-Nm1" customClass="NCVCoolViewCell">
+                                        <rect key="frame" x="55" y="223" width="144.6494140625" height="50.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" name="CoolCellColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="Cool Cell 🆒"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBA-YB-avJ" customClass="NCVCoolViewCell">
+                                        <rect key="frame" x="55" y="108" width="144.6494140625" height="50.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="CoolCellColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="Cool Cell 🆒"/>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" name="ContentViewColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VIP-Gl-zEy" userLabel="AccessoryView">
-                                <rect key="frame" x="-1" y="0.0" width="418" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIP-Gl-zEy" userLabel="AccessoryView">
+                                <rect key="frame" x="-2" y="0.0" width="418" height="91"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMa-Yg-JVf">
-                                        <rect key="frame" x="13" y="43" width="30" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="49"/>
-                                        <state key="normal" title="-">
-                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        </state>
-                                    </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter a cool label" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rCe-1r-uKN">
-                                        <rect key="frame" x="62" y="47" width="290" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxt-iV-r4u">
-                                        <rect key="frame" x="368" y="43" width="30" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="49"/>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        </state>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nTt-At-ART">
+                                        <rect key="frame" x="20" y="45" width="378" height="32"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter something cool" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wCN-ay-qbk">
+                                                <rect key="frame" x="0.0" y="0.0" width="340" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkx-o7-Vzw">
+                                                <rect key="frame" x="348" y="0.0" width="30" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.60102739729999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addCell" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMl-Fc-VhX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" name="AccessoryViewColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nTt-At-ART" secondAttribute="trailing" constant="20" id="8Ns-Uw-buV"/>
+                                    <constraint firstItem="nTt-At-ART" firstAttribute="top" secondItem="VIP-Gl-zEy" secondAttribute="top" constant="45" id="Ere-2D-Gif"/>
+                                    <constraint firstItem="nTt-At-ART" firstAttribute="leading" secondItem="VIP-Gl-zEy" secondAttribute="leading" constant="20" id="IB2-1E-NEq"/>
+                                    <constraint firstAttribute="bottom" secondItem="nTt-At-ART" secondAttribute="bottom" constant="14" id="is4-qS-6cQ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vtp-j8-6HF" firstAttribute="top" secondItem="VIP-Gl-zEy" secondAttribute="bottom" id="B85-cy-jic"/>
+                            <constraint firstItem="VIP-Gl-zEy" firstAttribute="centerX" secondItem="Vtp-j8-6HF" secondAttribute="centerX" id="P2X-z7-dHy"/>
+                            <constraint firstItem="Vtp-j8-6HF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RyX-vx-dPJ"/>
+                            <constraint firstItem="VIP-Gl-zEy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TaV-gf-PhH"/>
+                            <constraint firstItem="VIP-Gl-zEy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zco-qW-baG"/>
+                            <constraint firstItem="VIP-Gl-zEy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-22" id="cQ1-Y0-8WC"/>
+                            <constraint firstAttribute="bottom" secondItem="Vtp-j8-6HF" secondAttribute="bottom" id="djT-dz-mmA"/>
+                            <constraint firstAttribute="bottom" secondItem="VIP-Gl-zEy" secondAttribute="bottom" constant="805" id="yQc-1T-84h"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="contentView" destination="Vtp-j8-6HF" id="apF-Aw-nPG"/>
+                        <outlet property="textField" destination="wCN-ay-qbk" id="U4w-8K-tIi"/>
+                        <outletCollection property="cells" destination="y1c-IG-Nm1" collectionClass="NSMutableArray" id="eb2-58-QgR"/>
+                        <outletCollection property="cells" destination="bBA-YB-avJ" collectionClass="NSMutableArray" id="wjw-oH-VsW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="m9J-bk-bjv">
+                    <connections>
+                        <action selector="endAnimations" destination="BYZ-38-t0r" id="pra-KT-lNp"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="AccessoryViewColor">
-            <color red="0.94549095812182737" green="0.60208243753906288" blue="0.32715304858567795" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.94499999284744263" green="0.60199999809265137" blue="0.32699999213218689" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="ContentViewColor">
-            <color red="0.50812898975320453" green="0.68260525418802354" blue="0.79062809317766491" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.50800001621246338" green="0.68300002813339233" blue="0.79100000858306885" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="CoolCellColor">
-            <color red="0.89754520939086291" green="0.78258867148719768" blue="0.68292745019933543" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.89800000190734863" green="0.78299999237060547" blue="0.68300002813339233" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

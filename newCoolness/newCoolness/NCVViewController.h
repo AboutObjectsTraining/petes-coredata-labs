@@ -1,5 +1,5 @@
 //
-//  NVCViewController.h
+//  NCVViewController.h
 //  newCoolness
 //
 //  Created by Peter Victoratos on 2/24/20.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NVCViewController : UIViewController
+@interface NCVViewController : UIViewController
 
 
 @end

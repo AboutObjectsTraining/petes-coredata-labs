@@ -1,14 +1,14 @@
 //
-//  NVCAppDelegate.m
+//  NCVAppDelegate.m
 //  newCoolness
 //
 //  Created by Peter Victoratos on 2/24/20.
 //  Copyright © 2020 GGOG. All rights reserved.
 //
 
-#import "NVCAppDelegate.h"
+#import "NCVAppDelegate.h"
 
-@implementation NVCAppDelegate
+@implementation NCVAppDelegate
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"In %s", __func__);

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  NCVAppDelegate.h
 //  newCoolness
 //
 //  Created by Peter Victoratos on 2/24/20.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NVCAppDelegate : UIResponder <UIApplicationDelegate>
+@interface NCVAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

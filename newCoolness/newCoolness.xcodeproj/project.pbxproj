@@ -7,30 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7FF78A3124045C3B00BFD6B9 /* NVCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF78A3024045C3B00BFD6B9 /* NVCAppDelegate.m */; };
-		7FF78A3724045C3B00BFD6B9 /* NVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF78A3624045C3B00BFD6B9 /* NVCViewController.m */; };
+		7FF78A3124045C3B00BFD6B9 /* NCVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF78A3024045C3B00BFD6B9 /* NCVAppDelegate.m */; };
+		7FF78A3724045C3B00BFD6B9 /* NCVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF78A3624045C3B00BFD6B9 /* NCVViewController.m */; };
 		7FF78A3A24045C3B00BFD6B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FF78A3824045C3B00BFD6B9 /* Main.storyboard */; };
 		7FF78A3C24045C3D00BFD6B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF78A3B24045C3D00BFD6B9 /* Assets.xcassets */; };
 		7FF78A3F24045C3D00BFD6B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FF78A3D24045C3D00BFD6B9 /* LaunchScreen.storyboard */; };
 		7FF78A4224045C3D00BFD6B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF78A4124045C3D00BFD6B9 /* main.m */; };
 		7FF78A492404B47E00BFD6B9 /* NCVColorScheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF78A482404B47E00BFD6B9 /* NCVColorScheme.xcassets */; };
-		7FF78A4C2404B82600BFD6B9 /* NVCCoolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF78A4B2404B82600BFD6B9 /* NVCCoolViewCell.m */; };
+		7FF78A4C2404B82600BFD6B9 /* NCVCoolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF78A4B2404B82600BFD6B9 /* NCVCoolViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7FF78A2C24045C3B00BFD6B9 /* newCoolness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newCoolness.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FF78A2F24045C3B00BFD6B9 /* NVCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVCAppDelegate.h; sourceTree = "<group>"; };
-		7FF78A3024045C3B00BFD6B9 /* NVCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVCAppDelegate.m; sourceTree = "<group>"; };
-		7FF78A3524045C3B00BFD6B9 /* NVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVCViewController.h; sourceTree = "<group>"; };
-		7FF78A3624045C3B00BFD6B9 /* NVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVCViewController.m; sourceTree = "<group>"; };
+		7FF78A2F24045C3B00BFD6B9 /* NCVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCVAppDelegate.h; sourceTree = "<group>"; };
+		7FF78A3024045C3B00BFD6B9 /* NCVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCVAppDelegate.m; sourceTree = "<group>"; };
+		7FF78A3524045C3B00BFD6B9 /* NCVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCVViewController.h; sourceTree = "<group>"; };
+		7FF78A3624045C3B00BFD6B9 /* NCVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCVViewController.m; sourceTree = "<group>"; };
 		7FF78A3924045C3B00BFD6B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FF78A3B24045C3D00BFD6B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FF78A3E24045C3D00BFD6B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FF78A4024045C3D00BFD6B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FF78A4124045C3D00BFD6B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FF78A482404B47E00BFD6B9 /* NCVColorScheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NCVColorScheme.xcassets; sourceTree = "<group>"; };
-		7FF78A4A2404B82600BFD6B9 /* NVCCoolViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVCCoolViewCell.h; sourceTree = "<group>"; };
-		7FF78A4B2404B82600BFD6B9 /* NVCCoolViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVCCoolViewCell.m; sourceTree = "<group>"; };
+		7FF78A4A2404B82600BFD6B9 /* NCVCoolViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCVCoolViewCell.h; sourceTree = "<group>"; };
+		7FF78A4B2404B82600BFD6B9 /* NCVCoolViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCVCoolViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +63,12 @@
 		7FF78A2E24045C3B00BFD6B9 /* newCoolness */ = {
 			isa = PBXGroup;
 			children = (
-				7FF78A2F24045C3B00BFD6B9 /* NVCAppDelegate.h */,
-				7FF78A3024045C3B00BFD6B9 /* NVCAppDelegate.m */,
-				7FF78A4A2404B82600BFD6B9 /* NVCCoolViewCell.h */,
-				7FF78A4B2404B82600BFD6B9 /* NVCCoolViewCell.m */,
-				7FF78A3524045C3B00BFD6B9 /* NVCViewController.h */,
-				7FF78A3624045C3B00BFD6B9 /* NVCViewController.m */,
+				7FF78A2F24045C3B00BFD6B9 /* NCVAppDelegate.h */,
+				7FF78A3024045C3B00BFD6B9 /* NCVAppDelegate.m */,
+				7FF78A4A2404B82600BFD6B9 /* NCVCoolViewCell.h */,
+				7FF78A4B2404B82600BFD6B9 /* NCVCoolViewCell.m */,
+				7FF78A3524045C3B00BFD6B9 /* NCVViewController.h */,
+				7FF78A3624045C3B00BFD6B9 /* NCVViewController.m */,
 				7FF78A3824045C3B00BFD6B9 /* Main.storyboard */,
 				7FF78A482404B47E00BFD6B9 /* NCVColorScheme.xcassets */,
 				7FF78A3B24045C3D00BFD6B9 /* Assets.xcassets */,
@@ -150,10 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FF78A3724045C3B00BFD6B9 /* NVCViewController.m in Sources */,
-				7FF78A3124045C3B00BFD6B9 /* NVCAppDelegate.m in Sources */,
+				7FF78A3724045C3B00BFD6B9 /* NCVViewController.m in Sources */,
+				7FF78A3124045C3B00BFD6B9 /* NCVAppDelegate.m in Sources */,
 				7FF78A4224045C3D00BFD6B9 /* main.m in Sources */,
-				7FF78A4C2404B82600BFD6B9 /* NVCCoolViewCell.m in Sources */,
+				7FF78A4C2404B82600BFD6B9 /* NCVCoolViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +229,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -281,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
