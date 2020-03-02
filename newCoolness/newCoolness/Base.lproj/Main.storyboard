@@ -38,6 +38,9 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" name="ContentViewColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="m9J-bk-bjv" appends="YES" id="aux-Mg-Xa3"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIP-Gl-zEy" userLabel="AccessoryView">
                                 <rect key="frame" x="-2" y="0.0" width="418" height="91"/>
@@ -45,12 +48,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nTt-At-ART">
                                         <rect key="frame" x="20" y="45" width="378" height="32"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter something cool" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wCN-ay-qbk">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter something cool" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wCN-ay-qbk">
                                                 <rect key="frame" x="0.0" y="0.0" width="340" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkx-o7-Vzw">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkx-o7-Vzw">
                                                 <rect key="frame" x="348" y="0.0" width="30" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="+">
@@ -66,6 +69,7 @@
                                 <color key="backgroundColor" name="AccessoryViewColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="nTt-At-ART" secondAttribute="trailing" constant="20" id="8Ns-Uw-buV"/>
+                                    <constraint firstAttribute="height" constant="91" id="92m-Rs-hx3"/>
                                     <constraint firstItem="nTt-At-ART" firstAttribute="top" secondItem="VIP-Gl-zEy" secondAttribute="top" constant="45" id="Ere-2D-Gif"/>
                                     <constraint firstItem="nTt-At-ART" firstAttribute="leading" secondItem="VIP-Gl-zEy" secondAttribute="leading" constant="20" id="IB2-1E-NEq"/>
                                     <constraint firstAttribute="bottom" secondItem="nTt-At-ART" secondAttribute="bottom" constant="14" id="is4-qS-6cQ"/>
@@ -81,7 +85,6 @@
                             <constraint firstItem="VIP-Gl-zEy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zco-qW-baG"/>
                             <constraint firstItem="VIP-Gl-zEy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-22" id="cQ1-Y0-8WC"/>
                             <constraint firstAttribute="bottom" secondItem="Vtp-j8-6HF" secondAttribute="bottom" id="djT-dz-mmA"/>
-                            <constraint firstAttribute="bottom" secondItem="VIP-Gl-zEy" secondAttribute="bottom" constant="805" id="yQc-1T-84h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
