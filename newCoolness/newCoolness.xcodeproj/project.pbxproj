@@ -47,7 +47,7 @@
 		7FF78A2324045C3B00BFD6B9 = {
 			isa = PBXGroup;
 			children = (
-				7FF78A2E24045C3B00BFD6B9 /* newCoolness */,
+				7FF78A2E24045C3B00BFD6B9 /* NewCoolness */,
 				7FF78A2D24045C3B00BFD6B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,7 +60,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7FF78A2E24045C3B00BFD6B9 /* newCoolness */ = {
+		7FF78A2E24045C3B00BFD6B9 /* NewCoolness */ = {
 			isa = PBXGroup;
 			children = (
 				7FF78A2F24045C3B00BFD6B9 /* NCVAppDelegate.h */,
@@ -76,7 +76,7 @@
 				7FF78A4024045C3D00BFD6B9 /* Info.plist */,
 				7FF78A4124045C3D00BFD6B9 /* main.m */,
 			);
-			path = newCoolness;
+			path = NewCoolness;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7FF78A2724045C3B00BFD6B9 /* Build configuration list for PBXProject "newCoolness" */;
+			buildConfigurationList = 7FF78A2724045C3B00BFD6B9 /* Build configuration list for PBXProject "NewCoolness" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -326,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7FF78A2724045C3B00BFD6B9 /* Build configuration list for PBXProject "newCoolness" */ = {
+		7FF78A2724045C3B00BFD6B9 /* Build configuration list for PBXProject "NewCoolness" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FF78A4324045C3D00BFD6B9 /* Debug */,

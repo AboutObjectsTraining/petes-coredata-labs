@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:newCoolness.xcodeproj">
+      location = "self:/Users/pvictoratos/Desktop/petes-coredata-labs/newCoolness/NewCoolness.xcodeproj">
    </FileRef>
 </Workspace>
