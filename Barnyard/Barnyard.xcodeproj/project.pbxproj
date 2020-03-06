@@ -14,9 +14,10 @@
 		7F4370AB2412EBE90096D66A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370AA2412EBE90096D66A /* Assets.xcassets */; };
 		7F4370AE2412EBE90096D66A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370AC2412EBE90096D66A /* LaunchScreen.storyboard */; };
 		7F4370B12412EBE90096D66A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4370B02412EBE90096D66A /* main.m */; };
-		7F4370BB2412EEF30096D66A /* bleat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370B82412EEF30096D66A /* bleat.wav */; };
-		7F4370BC2412EEF30096D66A /* doodle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370B92412EEF30096D66A /* doodle.wav */; };
-		7F4370BD2412EEF30096D66A /* oink.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370BA2412EEF30096D66A /* oink.wav */; };
+		7F4370C02412F19C0096D66A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4370BF2412F19C0096D66A /* AVFoundation.framework */; };
+		7F4370C42412F3350096D66A /* goat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370C12412F3350096D66A /* goat.wav */; };
+		7F4370C52412F3350096D66A /* pig.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370C22412F3350096D66A /* pig.wav */; };
+		7F4370C62412F3350096D66A /* rooster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370C32412F3350096D66A /* rooster.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +33,10 @@
 		7F4370AD2412EBE90096D66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F4370AF2412EBE90096D66A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F4370B02412EBE90096D66A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7F4370B82412EEF30096D66A /* bleat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bleat.wav; path = ../../../../barnyard_assets/sounds/bleat.wav; sourceTree = "<group>"; };
-		7F4370B92412EEF30096D66A /* doodle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = doodle.wav; path = ../../../../barnyard_assets/sounds/doodle.wav; sourceTree = "<group>"; };
-		7F4370BA2412EEF30096D66A /* oink.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = oink.wav; path = ../../../../barnyard_assets/sounds/oink.wav; sourceTree = "<group>"; };
+		7F4370BF2412F19C0096D66A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7F4370C12412F3350096D66A /* goat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goat.wav; sourceTree = "<group>"; };
+		7F4370C22412F3350096D66A /* pig.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pig.wav; sourceTree = "<group>"; };
+		7F4370C32412F3350096D66A /* rooster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4370C02412F19C0096D66A /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +56,7 @@
 			children = (
 				7F43709D2412EBE80096D66A /* Barnyard */,
 				7F43709C2412EBE80096D66A /* Products */,
+				7F4370BE2412F19B0096D66A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,11 +90,19 @@
 		7F4370B72412EEE30096D66A /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				7F4370B82412EEF30096D66A /* bleat.wav */,
-				7F4370B92412EEF30096D66A /* doodle.wav */,
-				7F4370BA2412EEF30096D66A /* oink.wav */,
+				7F4370C12412F3350096D66A /* goat.wav */,
+				7F4370C22412F3350096D66A /* pig.wav */,
+				7F4370C32412F3350096D66A /* rooster.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		7F4370BE2412F19B0096D66A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F4370BF2412F19C0096D66A /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,11 +163,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F4370AE2412EBE90096D66A /* LaunchScreen.storyboard in Resources */,
-				7F4370BB2412EEF30096D66A /* bleat.wav in Resources */,
+				7F4370C62412F3350096D66A /* rooster.wav in Resources */,
 				7F4370AB2412EBE90096D66A /* Assets.xcassets in Resources */,
-				7F4370BD2412EEF30096D66A /* oink.wav in Resources */,
 				7F4370A92412EBE80096D66A /* Main.storyboard in Resources */,
-				7F4370BC2412EEF30096D66A /* doodle.wav in Resources */,
+				7F4370C52412F3350096D66A /* pig.wav in Resources */,
+				7F4370C42412F3350096D66A /* goat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
