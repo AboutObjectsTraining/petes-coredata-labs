@@ -2,67 +2,64 @@
 //  RELReadingListController.m
 //  ReadingList
 //
-//  Created by Pete Victoratos on 3/12/20.
+//  Created by Pete Victoratos on 3/13/20.
 //  Copyright © 2020 About Objects. All rights reserved.
 //
 
 #import "RELReadingListController.h"
 #import "RELSampleBook.h"
+#import "RELViewBookController.h"
 
 @interface RELReadingListController()
 @property (strong, nonatomic) NSMutableArray *sampleBooks;
+@property (strong, nonatomic) RELViewBookController *viewBookPage;
 @end
 
 @implementation RELReadingListController
 
-//calls the load books method in a place that is called once but not often, if ever again
+//view did load
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadBooks];
 }
 
-//lazily initializes the sampleBooks array
+//create sample books array, lazily
 - (NSMutableArray *)sampleBooks {
-    if (_sampleBooks == nil){
-        //_sampleBooks = [[NSMutableArray alloc] init]; line 28 does the same thing but cleaner
+    if (_sampleBooks == nil) {
         _sampleBooks = [NSMutableArray array];
     }
     return _sampleBooks;
 }
 
-//populate sampleBooks array
+//load the books
 - (void)loadBooks {
-    [self.sampleBooks addObjectsFromArray:@[[[RELSampleBook alloc] initWithTitle:@"Book About Dudes" authorName:@"Guy Dude"],
-                                            [[RELSampleBook alloc] initWithTitle:@"Book About Girls" authorName:@"Gal Girl"],
-                                            [[RELSampleBook alloc] initWithTitle:@"Book About Things" authorName:@"Thing"],
+    [self.sampleBooks addObjectsFromArray:@[[[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Sorcerers Stone" authorName:@"JK Rowling"],
+                                            [[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Chamber of Secrets" authorName:@"JK Rowling"],
+                                            [[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Prisoner of Azkaban" authorName:@"JK Rowling"],
                                             ]];
 }
 
-//tells how many rows there are, in this case how many books
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.sampleBooks count];
 }
 
-//populate cells with Books
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if ((int)indexPath.row % 2 == 0) {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Even"];
-        RELSampleBook *sampleBook = self.sampleBooks[indexPath.row];
-        cell.textLabel.text = sampleBook.bookTitle;
-        cell.detailTextLabel.text = sampleBook.authorName;
-        return cell;
-    }
-    else {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Odd"];
-        RELSampleBook *sampleBook = self.sampleBooks[indexPath.row];
-        cell.textLabel.text = sampleBook.bookTitle;
-        cell.detailTextLabel.text = sampleBook.authorName;
-        return cell;
-    }
+//populate the cells
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:(indexPath.row % 2 == 0) ? @"Even" : @"Odd"];
+    RELSampleBook *sampleBook = self.sampleBooks[indexPath.row];
+    cell.textLabel.text = sampleBook.bookTitle;
+    cell.detailTextLabel.text = sampleBook.authorName;
+    return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    RELViewBookController *controller = segue.destinationViewController;
+    NSIndexPath *selectedIndexPath = self.tableView.indexPathForSelectedRow;
+    controller.book = self.sampleBooks[selectedIndexPath.row];
+}
+
+//other action methods
 - (IBAction)doneEditingBook:(UIStoryboardSegue *)segue {
     [self.tableView reloadData];
     //save to data source
@@ -77,3 +74,4 @@
 }
 
 @end
+

@@ -256,6 +256,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="firstNameLabel" destination="U9A-QN-ghK" id="C5J-BO-taj"/>
+                        <outlet property="imageView" destination="xia-4H-eah" id="11V-Qq-hOH"/>
+                        <outlet property="lastNameLabel" destination="xNi-pM-3Uz" id="Ctw-h6-qcy"/>
+                        <outlet property="titleLabel" destination="riD-Rc-kkq" id="8cA-zV-5RR"/>
+                        <outlet property="yearLabel" destination="9Qr-Uh-KXQ" id="gZ6-rJ-DsP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYS-Z3-zFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -293,6 +300,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WqY-NP-lCL"/>
+        <segue reference="SpW-hE-Zc0"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,6 +8,7 @@
 
 #import "RELViewBookController.h"
 #import "RELEditBookController.h"
+#import "RELSampleBook.h"
 
 @interface RELViewBookController ()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -19,6 +20,20 @@
 
 @implementation RELViewBookController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.titleLabel.text = self.book.bookTitle;
+    self.firstNameLabel.text = self.book.authorName;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    UINavigationController *navController = segue.destinationViewController;
+    RELEditBookController *controller = navController.childViewControllers.firstObject;
+    
+    controller.book = self.book;
+}
 
 - (IBAction)cancelEditingBook:(UIStoryboardSegue *)segue {
     

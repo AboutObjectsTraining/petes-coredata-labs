@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F9408A35241926EF003E3301 /* EditBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9408A34241926EF003E3301 /* EditBook.storyboard */; };
 		F9408A38241930DE003E3301 /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9408A37241930DE003E3301 /* RELEditBookController.m */; };
+		F9907F1B241BD685001D19C9 /* RELReadingListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9907F1A241BD685001D19C9 /* RELReadingListController.m */; };
 		F9A6C6472416BCA7006056F3 /* RELAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C6462416BCA7006056F3 /* RELAppDelegate.m */; };
 		F9A6C64A2416BCA7006056F3 /* RELViewBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C6492416BCA7006056F3 /* RELViewBookController.m */; };
 		F9A6C64D2416BCA7006056F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A6C64B2416BCA7006056F3 /* Main.storyboard */; };
@@ -17,19 +18,20 @@
 		F9A6C6552416BCAF006056F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C6542416BCAF006056F3 /* main.m */; };
 		F9A6C65C2416C4B5006056F3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A6C65B2416C4B5006056F3 /* Colors.xcassets */; };
 		F9A6C6602416CA57006056F3 /* RLMBook.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C65F2416CA57006056F3 /* RLMBook.m */; };
-		F9A6C6632416CDD3006056F3 /* OLDReadingListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C6622416CDD3006056F3 /* OLDReadingListController.m */; };
+		F9A6C6632416CDD3006056F3 /* OLDERReadingListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C6622416CDD3006056F3 /* OLDERReadingListController.m */; };
 		F9A6C6662416D59F006056F3 /* RLMAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C6652416D59F006056F3 /* RLMAuthor.m */; };
 		F9A6C6692416D6BD006056F3 /* RLMModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C6682416D6BD006056F3 /* RLMModelObject.m */; };
 		F9E54D222419491000F4A206 /* AddBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E54D212419491000F4A206 /* AddBook.storyboard */; };
 		F9E54D2524195EDB00F4A206 /* RELAddBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E54D2424195EDB00F4A206 /* RELAddBookController.m */; };
 		F9E54D28241A91FE00F4A206 /* RELSampleBook.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E54D27241A91FE00F4A206 /* RELSampleBook.m */; };
-		F9E54D2A241B139900F4A206 /* RELReadingListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E54D29241B139900F4A206 /* RELReadingListController.m */; };
+		F9E54D2A241B139900F4A206 /* OLDReadingListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E54D29241B139900F4A206 /* OLDReadingListController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F9408A34241926EF003E3301 /* EditBook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditBook.storyboard; sourceTree = "<group>"; };
 		F9408A36241930DE003E3301 /* RELEditBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELEditBookController.h; sourceTree = "<group>"; };
 		F9408A37241930DE003E3301 /* RELEditBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELEditBookController.m; sourceTree = "<group>"; };
+		F9907F1A241BD685001D19C9 /* RELReadingListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELReadingListController.m; sourceTree = "<group>"; };
 		F9A6C6422416BCA7006056F3 /* ReadingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A6C6452416BCA7006056F3 /* RELAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELAppDelegate.h; sourceTree = "<group>"; };
 		F9A6C6462416BCA7006056F3 /* RELAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAppDelegate.m; sourceTree = "<group>"; };
@@ -44,7 +46,7 @@
 		F9A6C65E2416CA57006056F3 /* RLMBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLMBook.h; sourceTree = "<group>"; };
 		F9A6C65F2416CA57006056F3 /* RLMBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLMBook.m; sourceTree = "<group>"; };
 		F9A6C6612416CDD3006056F3 /* RELReadingListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELReadingListController.h; sourceTree = "<group>"; };
-		F9A6C6622416CDD3006056F3 /* OLDReadingListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OLDReadingListController.m; sourceTree = "<group>"; };
+		F9A6C6622416CDD3006056F3 /* OLDERReadingListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OLDERReadingListController.m; sourceTree = "<group>"; };
 		F9A6C6642416D59F006056F3 /* RLMAuthor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLMAuthor.h; sourceTree = "<group>"; };
 		F9A6C6652416D59F006056F3 /* RLMAuthor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLMAuthor.m; sourceTree = "<group>"; };
 		F9A6C6672416D6BD006056F3 /* RLMModelObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLMModelObject.h; sourceTree = "<group>"; };
@@ -54,7 +56,7 @@
 		F9E54D2424195EDB00F4A206 /* RELAddBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAddBookController.m; sourceTree = "<group>"; };
 		F9E54D26241A91FE00F4A206 /* RELSampleBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELSampleBook.h; sourceTree = "<group>"; };
 		F9E54D27241A91FE00F4A206 /* RELSampleBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELSampleBook.m; sourceTree = "<group>"; };
-		F9E54D29241B139900F4A206 /* RELReadingListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELReadingListController.m; sourceTree = "<group>"; };
+		F9E54D29241B139900F4A206 /* OLDReadingListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OLDReadingListController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +93,9 @@
 				F9A6C6452416BCA7006056F3 /* RELAppDelegate.h */,
 				F9A6C6462416BCA7006056F3 /* RELAppDelegate.m */,
 				F9A6C6612416CDD3006056F3 /* RELReadingListController.h */,
-				F9A6C6622416CDD3006056F3 /* OLDReadingListController.m */,
-				F9E54D29241B139900F4A206 /* RELReadingListController.m */,
+				F9A6C6622416CDD3006056F3 /* OLDERReadingListController.m */,
+				F9E54D29241B139900F4A206 /* OLDReadingListController.m */,
+				F9907F1A241BD685001D19C9 /* RELReadingListController.m */,
 				F9E54D26241A91FE00F4A206 /* RELSampleBook.h */,
 				F9E54D27241A91FE00F4A206 /* RELSampleBook.m */,
 				F9A6C6482416BCA7006056F3 /* RELViewBookController.h */,
@@ -207,9 +210,10 @@
 				F9A6C6692416D6BD006056F3 /* RLMModelObject.m in Sources */,
 				F9A6C6602416CA57006056F3 /* RLMBook.m in Sources */,
 				F9E54D2524195EDB00F4A206 /* RELAddBookController.m in Sources */,
-				F9E54D2A241B139900F4A206 /* RELReadingListController.m in Sources */,
+				F9E54D2A241B139900F4A206 /* OLDReadingListController.m in Sources */,
 				F9A6C6472416BCA7006056F3 /* RELAppDelegate.m in Sources */,
-				F9A6C6632416CDD3006056F3 /* OLDReadingListController.m in Sources */,
+				F9907F1B241BD685001D19C9 /* RELReadingListController.m in Sources */,
+				F9A6C6632416CDD3006056F3 /* OLDERReadingListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
