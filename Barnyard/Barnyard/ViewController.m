@@ -10,10 +10,8 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface ViewController ()
-{
-    AVAudioPlayer *_audioPlayer;
-    NSURL *_soundURL;
-}
+@property AVAudioPlayer *audioPlayer;
+@property NSURL *soundURL;
 @end
 
 @implementation ViewController
@@ -25,27 +23,27 @@
 
 - (IBAction)goatSpeak {
     NSString *goatSoundPath = [NSString stringWithFormat:@"%@/goat.wav", [[NSBundle mainBundle] resourcePath]];
-    _soundURL = [NSURL fileURLWithPath:goatSoundPath];
+    self.soundURL = [NSURL fileURLWithPath:goatSoundPath];
     
-    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:_soundURL error:nil];
-    [_audioPlayer play];
+    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.soundURL error:nil];
+    [self.audioPlayer play];
 }
 
 - (IBAction)roosterSpeak {
     NSString *roosterSoundPath = [NSString stringWithFormat:@"%@/rooster.wav", [[NSBundle mainBundle] resourcePath]];
-    _soundURL = [NSURL fileURLWithPath:roosterSoundPath];
+    self.soundURL = [NSURL fileURLWithPath:roosterSoundPath];
     
-    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:_soundURL error:nil];
-    [_audioPlayer play];
+    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.soundURL error:nil];
+    [self.audioPlayer play];
     
 }
 
 - (IBAction)pigSpeak {
     NSString *pigSoundPath = [NSString stringWithFormat:@"%@/pig.wav", [[NSBundle mainBundle] resourcePath]];
-    _soundURL = [NSURL fileURLWithPath:pigSoundPath];
+    self.soundURL = [NSURL fileURLWithPath:pigSoundPath];
     
-    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:_soundURL error:nil];
-    [_audioPlayer play];
+    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.soundURL error:nil];
+    [self.audioPlayer play];
 }
 
 

@@ -8,28 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		7F4370A02412EBE80096D66A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F43709F2412EBE80096D66A /* AppDelegate.m */; };
-		7F4370A32412EBE80096D66A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4370A22412EBE80096D66A /* SceneDelegate.m */; };
 		7F4370A62412EBE80096D66A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4370A52412EBE80096D66A /* ViewController.m */; };
 		7F4370A92412EBE80096D66A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370A72412EBE80096D66A /* Main.storyboard */; };
-		7F4370AB2412EBE90096D66A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370AA2412EBE90096D66A /* Assets.xcassets */; };
 		7F4370AE2412EBE90096D66A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370AC2412EBE90096D66A /* LaunchScreen.storyboard */; };
 		7F4370B12412EBE90096D66A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4370B02412EBE90096D66A /* main.m */; };
 		7F4370C02412F19C0096D66A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4370BF2412F19C0096D66A /* AVFoundation.framework */; };
 		7F4370C42412F3350096D66A /* goat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370C12412F3350096D66A /* goat.wav */; };
 		7F4370C52412F3350096D66A /* pig.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370C22412F3350096D66A /* pig.wav */; };
 		7F4370C62412F3350096D66A /* rooster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370C32412F3350096D66A /* rooster.wav */; };
+		F9A6AB422416B75500DB1ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A6AB412416B75500DB1ECC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F43709B2412EBE80096D66A /* Barnyard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barnyard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F43709E2412EBE80096D66A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7F43709F2412EBE80096D66A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7F4370A12412EBE80096D66A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		7F4370A22412EBE80096D66A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		7F4370A42412EBE80096D66A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7F4370A52412EBE80096D66A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7F4370A82412EBE80096D66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7F4370AA2412EBE90096D66A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F4370AD2412EBE90096D66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F4370AF2412EBE90096D66A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F4370B02412EBE90096D66A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -37,6 +33,7 @@
 		7F4370C12412F3350096D66A /* goat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goat.wav; sourceTree = "<group>"; };
 		7F4370C22412F3350096D66A /* pig.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pig.wav; sourceTree = "<group>"; };
 		7F4370C32412F3350096D66A /* rooster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster.wav; sourceTree = "<group>"; };
+		F9A6AB412416B75500DB1ECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +70,10 @@
 			children = (
 				7F43709E2412EBE80096D66A /* AppDelegate.h */,
 				7F43709F2412EBE80096D66A /* AppDelegate.m */,
-				7F4370A12412EBE80096D66A /* SceneDelegate.h */,
-				7F4370A22412EBE80096D66A /* SceneDelegate.m */,
 				7F4370A42412EBE80096D66A /* ViewController.h */,
 				7F4370A52412EBE80096D66A /* ViewController.m */,
 				7F4370A72412EBE80096D66A /* Main.storyboard */,
-				7F4370AA2412EBE90096D66A /* Assets.xcassets */,
+				F9A6AB412416B75500DB1ECC /* Assets.xcassets */,
 				7F4370B72412EEE30096D66A /* Sounds */,
 				7F4370AC2412EBE90096D66A /* LaunchScreen.storyboard */,
 				7F4370AF2412EBE90096D66A /* Info.plist */,
@@ -164,8 +159,8 @@
 			files = (
 				7F4370AE2412EBE90096D66A /* LaunchScreen.storyboard in Resources */,
 				7F4370C62412F3350096D66A /* rooster.wav in Resources */,
-				7F4370AB2412EBE90096D66A /* Assets.xcassets in Resources */,
 				7F4370A92412EBE80096D66A /* Main.storyboard in Resources */,
+				F9A6AB422416B75500DB1ECC /* Assets.xcassets in Resources */,
 				7F4370C52412F3350096D66A /* pig.wav in Resources */,
 				7F4370C42412F3350096D66A /* goat.wav in Resources */,
 			);
@@ -181,7 +176,6 @@
 				7F4370A62412EBE80096D66A /* ViewController.m in Sources */,
 				7F4370A02412EBE80096D66A /* AppDelegate.m in Sources */,
 				7F4370B12412EBE90096D66A /* main.m in Sources */,
-				7F4370A32412EBE80096D66A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5R6CF59GRY;
 				INFOPLIST_FILE = Barnyard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5R6CF59GRY;
 				INFOPLIST_FILE = Barnyard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

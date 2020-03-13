@@ -16,24 +16,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="7PD-oO-jIE">
-                                <rect key="frame" x="82.5" y="119.5" width="249.5" height="657.5"/>
+                                <rect key="frame" x="-42.5" y="-165.5" width="499" height="1227"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYv-Ly-L1e">
-                                        <rect key="frame" x="18.5" y="0.0" width="212" height="186"/>
+                                        <rect key="frame" x="37.5" y="0.0" width="424" height="372"/>
                                         <state key="normal" image="goat1"/>
                                         <connections>
                                             <action selector="goatSpeak" destination="BYZ-38-t0r" eventType="touchUpInside" id="t4i-Fy-4WE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdi-oV-pq4">
-                                        <rect key="frame" x="32.5" y="230" width="184.5" height="187.5"/>
+                                        <rect key="frame" x="65" y="416" width="369" height="375"/>
                                         <state key="normal" image="chikkin1"/>
                                         <connections>
                                             <action selector="roosterSpeak" destination="BYZ-38-t0r" eventType="touchUpInside" id="nuW-pd-Ocw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8B-js-gEC">
-                                        <rect key="frame" x="0.0" y="461.5" width="249.5" height="196"/>
+                                        <rect key="frame" x="0.0" y="835" width="499" height="392"/>
                                         <state key="normal" image="pig1"/>
                                         <connections>
                                             <action selector="pigSpeak" destination="BYZ-38-t0r" eventType="touchUpInside" id="cBD-zj-khE"/>

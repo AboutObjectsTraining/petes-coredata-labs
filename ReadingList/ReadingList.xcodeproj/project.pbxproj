@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9408A35241926EF003E3301 /* EditBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9408A34241926EF003E3301 /* EditBook.storyboard */; };
+		F9408A38241930DE003E3301 /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9408A37241930DE003E3301 /* RELEditBookController.m */; };
+		F9A6C6472416BCA7006056F3 /* RELAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C6462416BCA7006056F3 /* RELAppDelegate.m */; };
+		F9A6C64A2416BCA7006056F3 /* RELViewBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C6492416BCA7006056F3 /* RELViewBookController.m */; };
+		F9A6C64D2416BCA7006056F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A6C64B2416BCA7006056F3 /* Main.storyboard */; };
+		F9A6C64F2416BCAF006056F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A6C64E2416BCAF006056F3 /* Assets.xcassets */; };
+		F9A6C6522416BCAF006056F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A6C6502416BCAF006056F3 /* LaunchScreen.storyboard */; };
+		F9A6C6552416BCAF006056F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C6542416BCAF006056F3 /* main.m */; };
+		F9A6C65C2416C4B5006056F3 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A6C65B2416C4B5006056F3 /* Colors.xcassets */; };
+		F9A6C6602416CA57006056F3 /* RLMBook.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C65F2416CA57006056F3 /* RLMBook.m */; };
+		F9A6C6632416CDD3006056F3 /* OLDReadingListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C6622416CDD3006056F3 /* OLDReadingListController.m */; };
+		F9A6C6662416D59F006056F3 /* RLMAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C6652416D59F006056F3 /* RLMAuthor.m */; };
+		F9A6C6692416D6BD006056F3 /* RLMModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A6C6682416D6BD006056F3 /* RLMModelObject.m */; };
+		F9E54D222419491000F4A206 /* AddBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E54D212419491000F4A206 /* AddBook.storyboard */; };
+		F9E54D2524195EDB00F4A206 /* RELAddBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E54D2424195EDB00F4A206 /* RELAddBookController.m */; };
+		F9E54D28241A91FE00F4A206 /* RELSampleBook.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E54D27241A91FE00F4A206 /* RELSampleBook.m */; };
+		F9E54D2A241B139900F4A206 /* RELReadingListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E54D29241B139900F4A206 /* RELReadingListController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F9408A34241926EF003E3301 /* EditBook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditBook.storyboard; sourceTree = "<group>"; };
+		F9408A36241930DE003E3301 /* RELEditBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELEditBookController.h; sourceTree = "<group>"; };
+		F9408A37241930DE003E3301 /* RELEditBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELEditBookController.m; sourceTree = "<group>"; };
+		F9A6C6422416BCA7006056F3 /* ReadingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A6C6452416BCA7006056F3 /* RELAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELAppDelegate.h; sourceTree = "<group>"; };
+		F9A6C6462416BCA7006056F3 /* RELAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAppDelegate.m; sourceTree = "<group>"; };
+		F9A6C6482416BCA7006056F3 /* RELViewBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELViewBookController.h; sourceTree = "<group>"; };
+		F9A6C6492416BCA7006056F3 /* RELViewBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELViewBookController.m; sourceTree = "<group>"; };
+		F9A6C64C2416BCA7006056F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9A6C64E2416BCAF006056F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9A6C6512416BCAF006056F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9A6C6532416BCAF006056F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A6C6542416BCAF006056F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F9A6C65B2416C4B5006056F3 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F9A6C65E2416CA57006056F3 /* RLMBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLMBook.h; sourceTree = "<group>"; };
+		F9A6C65F2416CA57006056F3 /* RLMBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLMBook.m; sourceTree = "<group>"; };
+		F9A6C6612416CDD3006056F3 /* RELReadingListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELReadingListController.h; sourceTree = "<group>"; };
+		F9A6C6622416CDD3006056F3 /* OLDReadingListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OLDReadingListController.m; sourceTree = "<group>"; };
+		F9A6C6642416D59F006056F3 /* RLMAuthor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLMAuthor.h; sourceTree = "<group>"; };
+		F9A6C6652416D59F006056F3 /* RLMAuthor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLMAuthor.m; sourceTree = "<group>"; };
+		F9A6C6672416D6BD006056F3 /* RLMModelObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLMModelObject.h; sourceTree = "<group>"; };
+		F9A6C6682416D6BD006056F3 /* RLMModelObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLMModelObject.m; sourceTree = "<group>"; };
+		F9E54D212419491000F4A206 /* AddBook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddBook.storyboard; sourceTree = "<group>"; };
+		F9E54D2324195EDB00F4A206 /* RELAddBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELAddBookController.h; sourceTree = "<group>"; };
+		F9E54D2424195EDB00F4A206 /* RELAddBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAddBookController.m; sourceTree = "<group>"; };
+		F9E54D26241A91FE00F4A206 /* RELSampleBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELSampleBook.h; sourceTree = "<group>"; };
+		F9E54D27241A91FE00F4A206 /* RELSampleBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELSampleBook.m; sourceTree = "<group>"; };
+		F9E54D29241B139900F4A206 /* RELReadingListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELReadingListController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9A6C63F2416BCA7006056F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9A6C6392416BCA7006056F3 = {
+			isa = PBXGroup;
+			children = (
+				F9A6C6442416BCA7006056F3 /* ReadingList */,
+				F9A6C65D2416CA22006056F3 /* ReadingListModel */,
+				F9A6C6432416BCA7006056F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9A6C6432416BCA7006056F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9A6C6422416BCA7006056F3 /* ReadingList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9A6C6442416BCA7006056F3 /* ReadingList */ = {
+			isa = PBXGroup;
+			children = (
+				F9A6C6452416BCA7006056F3 /* RELAppDelegate.h */,
+				F9A6C6462416BCA7006056F3 /* RELAppDelegate.m */,
+				F9A6C6612416CDD3006056F3 /* RELReadingListController.h */,
+				F9A6C6622416CDD3006056F3 /* OLDReadingListController.m */,
+				F9E54D29241B139900F4A206 /* RELReadingListController.m */,
+				F9E54D26241A91FE00F4A206 /* RELSampleBook.h */,
+				F9E54D27241A91FE00F4A206 /* RELSampleBook.m */,
+				F9A6C6482416BCA7006056F3 /* RELViewBookController.h */,
+				F9A6C6492416BCA7006056F3 /* RELViewBookController.m */,
+				F9408A36241930DE003E3301 /* RELEditBookController.h */,
+				F9408A37241930DE003E3301 /* RELEditBookController.m */,
+				F9E54D2324195EDB00F4A206 /* RELAddBookController.h */,
+				F9E54D2424195EDB00F4A206 /* RELAddBookController.m */,
+				F9A6C64B2416BCA7006056F3 /* Main.storyboard */,
+				F9E54D212419491000F4A206 /* AddBook.storyboard */,
+				F9408A34241926EF003E3301 /* EditBook.storyboard */,
+				F9A6C64E2416BCAF006056F3 /* Assets.xcassets */,
+				F9A6C65B2416C4B5006056F3 /* Colors.xcassets */,
+				F9A6C6502416BCAF006056F3 /* LaunchScreen.storyboard */,
+				F9A6C6532416BCAF006056F3 /* Info.plist */,
+				F9A6C6542416BCAF006056F3 /* main.m */,
+			);
+			path = ReadingList;
+			sourceTree = "<group>";
+		};
+		F9A6C65D2416CA22006056F3 /* ReadingListModel */ = {
+			isa = PBXGroup;
+			children = (
+				F9A6C6672416D6BD006056F3 /* RLMModelObject.h */,
+				F9A6C6682416D6BD006056F3 /* RLMModelObject.m */,
+				F9A6C6642416D59F006056F3 /* RLMAuthor.h */,
+				F9A6C6652416D59F006056F3 /* RLMAuthor.m */,
+				F9A6C65E2416CA57006056F3 /* RLMBook.h */,
+				F9A6C65F2416CA57006056F3 /* RLMBook.m */,
+			);
+			path = ReadingListModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9A6C6412416BCA7006056F3 /* ReadingList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A6C6582416BCAF006056F3 /* Build configuration list for PBXNativeTarget "ReadingList" */;
+			buildPhases = (
+				F9A6C63E2416BCA7006056F3 /* Sources */,
+				F9A6C63F2416BCA7006056F3 /* Frameworks */,
+				F9A6C6402416BCA7006056F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReadingList;
+			productName = ReadingList;
+			productReference = F9A6C6422416BCA7006056F3 /* ReadingList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9A6C63A2416BCA7006056F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "About Objects";
+				TargetAttributes = {
+					F9A6C6412416BCA7006056F3 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = F9A6C63D2416BCA7006056F3 /* Build configuration list for PBXProject "ReadingList" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9A6C6392416BCA7006056F3;
+			productRefGroup = F9A6C6432416BCA7006056F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9A6C6412416BCA7006056F3 /* ReadingList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9A6C6402416BCA7006056F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A6C6522416BCAF006056F3 /* LaunchScreen.storyboard in Resources */,
+				F9A6C65C2416C4B5006056F3 /* Colors.xcassets in Resources */,
+				F9A6C64F2416BCAF006056F3 /* Assets.xcassets in Resources */,
+				F9408A35241926EF003E3301 /* EditBook.storyboard in Resources */,
+				F9A6C64D2416BCA7006056F3 /* Main.storyboard in Resources */,
+				F9E54D222419491000F4A206 /* AddBook.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9A6C63E2416BCA7006056F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E54D28241A91FE00F4A206 /* RELSampleBook.m in Sources */,
+				F9A6C6662416D59F006056F3 /* RLMAuthor.m in Sources */,
+				F9A6C64A2416BCA7006056F3 /* RELViewBookController.m in Sources */,
+				F9408A38241930DE003E3301 /* RELEditBookController.m in Sources */,
+				F9A6C6552416BCAF006056F3 /* main.m in Sources */,
+				F9A6C6692416D6BD006056F3 /* RLMModelObject.m in Sources */,
+				F9A6C6602416CA57006056F3 /* RLMBook.m in Sources */,
+				F9E54D2524195EDB00F4A206 /* RELAddBookController.m in Sources */,
+				F9E54D2A241B139900F4A206 /* RELReadingListController.m in Sources */,
+				F9A6C6472416BCA7006056F3 /* RELAppDelegate.m in Sources */,
+				F9A6C6632416CDD3006056F3 /* OLDReadingListController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9A6C64B2416BCA7006056F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9A6C64C2416BCA7006056F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9A6C6502416BCAF006056F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9A6C6512416BCAF006056F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9A6C6562416BCAF006056F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F9A6C6572416BCAF006056F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9A6C6592416BCAF006056F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R6CF59GRY;
+				INFOPLIST_FILE = ReadingList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AO.ReadingList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9A6C65A2416BCAF006056F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R6CF59GRY;
+				INFOPLIST_FILE = ReadingList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AO.ReadingList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9A6C63D2416BCA7006056F3 /* Build configuration list for PBXProject "ReadingList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A6C6562416BCAF006056F3 /* Debug */,
+				F9A6C6572416BCAF006056F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A6C6582416BCAF006056F3 /* Build configuration list for PBXNativeTarget "ReadingList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A6C6592416BCAF006056F3 /* Debug */,
+				F9A6C65A2416BCAF006056F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9A6C63A2416BCA7006056F3 /* Project object */;
+}
