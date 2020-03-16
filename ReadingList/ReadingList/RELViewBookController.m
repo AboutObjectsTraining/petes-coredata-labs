@@ -22,9 +22,10 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    NSArray *authorName = [self.book returnAuthorName:self.book.authorName];
+    
     [super viewWillAppear:animated];
     self.titleLabel.text = self.book.bookTitle;
-    NSArray *authorName = [self.book returnAuthorName:self.book.authorName];
     self.firstNameLabel.text = authorName[0];
     self.lastNameLabel.text = authorName[1];
 }
