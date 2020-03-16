@@ -10,6 +10,7 @@
 
 @interface RELSampleBook : NSObject
 - (instancetype)initWithTitle:(NSString *)bookTitle authorName:(NSString *)authorName;
+- (NSArray *)returnAuthorName:(NSString *)authorName;
 @property(nonatomic, copy) NSString *bookTitle;
 @property(nonatomic, copy) NSString *authorName;
 @end

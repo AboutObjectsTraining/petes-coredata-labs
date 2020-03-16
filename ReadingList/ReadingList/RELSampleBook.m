@@ -20,4 +20,9 @@
     return self;
 }
 
+- (NSArray *)returnAuthorName:(NSString *)authorName {
+    NSArray *fullName = [authorName componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" "]];
+    return fullName;
+}
+
 @end

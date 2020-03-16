@@ -24,7 +24,9 @@
 {
     [super viewWillAppear:animated];
     self.titleLabel.text = self.book.bookTitle;
-    self.firstNameLabel.text = self.book.authorName;
+    NSArray *authorName = [self.book returnAuthorName:self.book.authorName];
+    self.firstNameLabel.text = authorName[0];
+    self.lastNameLabel.text = authorName[1];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
