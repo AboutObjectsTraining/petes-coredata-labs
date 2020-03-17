@@ -29,8 +29,7 @@
 
 - (void)updateBook {
     self.book.bookTitle = self.titleField.text;
-    //how do i handle this? do i just make the year an NSString *?
-    self.book.bookYear = self.yearField.text;
+    self.book.bookYear = [NSNumber numberWithInt:self.yearField.text.intValue];
     self.book.authorFirstName = self.firstNameField.text;
     self.book.authorLastName = self.lastNameField.text;
 }

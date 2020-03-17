@@ -74,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				F9A6C6442416BCA7006056F3 /* ReadingList */,
-				F9A6C65D2416CA22006056F3 /* ReadingListModel */,
+				F9A6C65D2416CA22006056F3 /* ReadingListModelxyz */,
 				F9A6C6432416BCA7006056F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,7 +116,7 @@
 			path = ReadingList;
 			sourceTree = "<group>";
 		};
-		F9A6C65D2416CA22006056F3 /* ReadingListModel */ = {
+		F9A6C65D2416CA22006056F3 /* ReadingListModelxyz */ = {
 			isa = PBXGroup;
 			children = (
 				F9A6C6672416D6BD006056F3 /* RLMModelObject.h */,
@@ -126,7 +126,7 @@
 				F9A6C65E2416CA57006056F3 /* RLMBook.h */,
 				F9A6C65F2416CA57006056F3 /* RLMBook.m */,
 			);
-			path = ReadingListModel;
+			path = ReadingListModelxyz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
