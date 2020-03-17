@@ -34,9 +34,9 @@
 
 //load the books
 - (void)loadBooks {
-    [self.sampleBooks addObjectsFromArray:@[[[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Sorcerers Stone" authorName:@"JK Rowling" bookYear:[NSNumber numberWithInt:1998]],
-                                            [[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Chamber of Secrets" authorName:@"JK Rowling" bookYear:[NSNumber numberWithInt:1994]],
-                                            [[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Prisoner of Azkaban" authorName:@"JK Rowling" bookYear:[NSNumber numberWithInt:2004]],
+    [self.sampleBooks addObjectsFromArray:@[[[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Sorcerers Stone" authorName:@"J.K. Rowling" bookYear:[NSNumber numberWithInt:1998]],
+                                            [[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Chamber of Secrets" authorName:@"J.K. Rowling" bookYear:[NSNumber numberWithInt:1994]],
+                                            [[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Prisoner of Azkaban" authorName:@"J.K. Rowling" bookYear:[NSNumber numberWithInt:2004]],
                                             ]];
 }
 
@@ -50,7 +50,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:(indexPath.row % 2 == 0) ? @"Even" : @"Odd"];
     RELSampleBook *sampleBook = self.sampleBooks[indexPath.row];
     cell.textLabel.text = sampleBook.bookTitle;
-    cell.detailTextLabel.text = sampleBook.authorName;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@", sampleBook.bookYear, sampleBook.authorName];
     return cell;
 }
 
