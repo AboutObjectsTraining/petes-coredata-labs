@@ -32,9 +32,9 @@
 
 //populate sampleBooks array
 - (void)loadBooks {
-    [self.sampleBooks addObjectsFromArray:@[[[RELSampleBook alloc] initWithTitle:@"Book About Dudes" authorName:@"Guy Dude"],
-                                            [[RELSampleBook alloc] initWithTitle:@"Book About Girls" authorName:@"Gal Girl"],
-                                            [[RELSampleBook alloc] initWithTitle:@"Book About Things" authorName:@"Thing"],
+    [self.sampleBooks addObjectsFromArray:@[[[RELSampleBook alloc] initWithTitle:@"Book About Dudes" authorName:@"Guy Dude" bookYear:[NSNumber numberWithInt:2002]],
+                                            [[RELSampleBook alloc] initWithTitle:@"Book About Girls" authorName:@"Gal Girl" bookYear:[NSNumber numberWithInt:1994]],
+                                            [[RELSampleBook alloc] initWithTitle:@"Book About Things" authorName:@"Thing" bookYear:[NSNumber numberWithInt:1924]],
                                             ]];
 }
 

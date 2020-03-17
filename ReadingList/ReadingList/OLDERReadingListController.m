@@ -24,9 +24,9 @@
 
 - (void)loadBooks {
     
-    [self.sampleBooks addObjectsFromArray:@[[[RELSampleBook alloc] initWithTitle:@"Put Me in the Zoo" authorName:@"Robert Lopshire"],
-                                            [[RELSampleBook alloc] initWithTitle:@"The Rainbow Fish" authorName:@"Marcus Pfister"],
-                                            [[RELSampleBook alloc] initWithTitle:@"The Giving Tree" authorName:@"Shel Silverstein"],
+    [self.sampleBooks addObjectsFromArray:@[[[RELSampleBook alloc] initWithTitle:@"Put Me in the Zoo" authorName:@"Robert Lopshire" bookYear:[NSNumber numberWithInt:1960]],
+                                            [[RELSampleBook alloc] initWithTitle:@"The Rainbow Fish" authorName:@"Marcus Pfister" bookYear:[NSNumber numberWithInt:1992]],
+                                            [[RELSampleBook alloc] initWithTitle:@"The Giving Tree" authorName:@"Shel Silverstein" bookYear:[NSNumber numberWithInt:1964]],
                                             ]];
 }
 

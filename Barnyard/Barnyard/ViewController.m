@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "CoolViewCell.h"
 
-@interface ViewController ()
+@interface ViewController () <UITextFieldDelegate>
 @property AVAudioPlayer *audioPlayer;
 @property NSURL *soundURL;
+@property (strong, nonatomic) IBOutletCollection(NSMutableArray) NSMutableArray *cells;
 @end
 
 @implementation ViewController
@@ -27,6 +29,8 @@
     
     self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.soundURL error:nil];
     [self.audioPlayer play];
+    [self addCell:@"*bleats*"];
+
 }
 
 - (IBAction)roosterSpeak {
@@ -35,6 +39,8 @@
     
     self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.soundURL error:nil];
     [self.audioPlayer play];
+    [self addCell:@"Cluck"];
+
     
 }
 
@@ -44,7 +50,23 @@
     
     self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.soundURL error:nil];
     [self.audioPlayer play];
+    [self addCell:@"Oink"];
 }
 
+- (NSMutableArray *)cells {
+    if (_cells == nil) {
+        _cells = [[NSMutableArray alloc] init];
+    }
+    return _cells;
+}
+
+- (void)addCell:(NSString *)animalSound {
+    CoolViewCell *cell = [[CoolViewCell alloc] init];
+    cell.backgroundColor = [cell randomColor];
+    cell.clipsToBounds = YES;
+    cell.text = animalSound;
+    [self.cells addObject:cell];
+    [self.view addSubview:cell];
+}
 
 @end

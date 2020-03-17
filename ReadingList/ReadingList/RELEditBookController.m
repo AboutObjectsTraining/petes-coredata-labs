@@ -7,6 +7,7 @@
 //
 
 #import "RELEditBookController.h"
+#import "RELSampleBook.h"
 
 @interface RELEditBookController ()
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
@@ -16,5 +17,30 @@
 @end
 
 @implementation RELEditBookController
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.titleField.text = self.book.bookTitle;
+    self.yearField.text = self.book.bookYear.stringValue;
+    self.firstNameField.text = self.book.authorFirstName;
+    self.lastNameField.text = self.book.authorLastName;
+}
+
+- (void)updateBook {
+    self.book.bookTitle = self.titleField.text;
+    //how do i handle this? do i just make the year an NSString *?
+    self.book.bookYear = self.yearField.text;
+    self.book.authorFirstName = self.firstNameField.text;
+    self.book.authorLastName = self.lastNameField.text;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Done"]) {
+        [self updateBook];
+    }
+}
+
 
 @end

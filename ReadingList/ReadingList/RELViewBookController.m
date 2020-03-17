@@ -21,21 +21,21 @@
 @implementation RELViewBookController
 
 - (void)viewWillAppear:(BOOL)animated
-{
-    NSArray *authorName = [self.book returnAuthorName:self.book.authorName];
-    
+{    
     [super viewWillAppear:animated];
     self.titleLabel.text = self.book.bookTitle;
-    self.firstNameLabel.text = authorName[0];
-    self.lastNameLabel.text = authorName[1];
+    self.yearLabel.text = self.book.bookYear.stringValue;
+    self.firstNameLabel.text = self.book.authorFirstName;
+    self.lastNameLabel.text = self.book.authorLastName;
 }
 
+//goes to edit scene
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     UINavigationController *navController = segue.destinationViewController;
     RELEditBookController *controller = navController.childViewControllers.firstObject;
-    
     controller.book = self.book;
+    
 }
 
 - (IBAction)cancelEditingBook:(UIStoryboardSegue *)segue {

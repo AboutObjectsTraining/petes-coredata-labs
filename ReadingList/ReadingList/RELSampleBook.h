@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface RELSampleBook : NSObject
-- (instancetype)initWithTitle:(NSString *)bookTitle authorName:(NSString *)authorName;
-- (NSArray *)returnAuthorName:(NSString *)authorName;
+- (instancetype)initWithTitle:(NSString *)bookTitle authorName:(NSString *)authorName bookYear:(NSNumber *) bookYear;
 @property(nonatomic, copy) NSString *bookTitle;
+@property(nonatomic, copy) NSNumber *bookYear;
 @property(nonatomic, copy) NSString *authorName;
+@property(nonatomic, copy) NSString *authorFirstName;
+@property(nonatomic, copy) NSString *authorLastName;
 @end
 

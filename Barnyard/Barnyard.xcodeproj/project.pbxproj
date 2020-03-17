@@ -16,6 +16,7 @@
 		7F4370C42412F3350096D66A /* goat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370C12412F3350096D66A /* goat.wav */; };
 		7F4370C52412F3350096D66A /* pig.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370C22412F3350096D66A /* pig.wav */; };
 		7F4370C62412F3350096D66A /* rooster.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7F4370C32412F3350096D66A /* rooster.wav */; };
+		F6C8205B241FF04F00194E43 /* CoolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C8205A241FF04F00194E43 /* CoolViewCell.m */; };
 		F9A6AB422416B75500DB1ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A6AB412416B75500DB1ECC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		7F4370C12412F3350096D66A /* goat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goat.wav; sourceTree = "<group>"; };
 		7F4370C22412F3350096D66A /* pig.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pig.wav; sourceTree = "<group>"; };
 		7F4370C32412F3350096D66A /* rooster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rooster.wav; sourceTree = "<group>"; };
+		F6C82059241FF04F00194E43 /* CoolViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoolViewCell.h; sourceTree = "<group>"; };
+		F6C8205A241FF04F00194E43 /* CoolViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoolViewCell.m; sourceTree = "<group>"; };
 		F9A6AB412416B75500DB1ECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +73,8 @@
 			children = (
 				7F43709E2412EBE80096D66A /* AppDelegate.h */,
 				7F43709F2412EBE80096D66A /* AppDelegate.m */,
+				F6C82059241FF04F00194E43 /* CoolViewCell.h */,
+				F6C8205A241FF04F00194E43 /* CoolViewCell.m */,
 				7F4370A42412EBE80096D66A /* ViewController.h */,
 				7F4370A52412EBE80096D66A /* ViewController.m */,
 				7F4370A72412EBE80096D66A /* Main.storyboard */,
@@ -174,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F4370A62412EBE80096D66A /* ViewController.m in Sources */,
+				F6C8205B241FF04F00194E43 /* CoolViewCell.m in Sources */,
 				7F4370A02412EBE80096D66A /* AppDelegate.m in Sources */,
 				7F4370B12412EBE90096D66A /* main.m in Sources */,
 			);

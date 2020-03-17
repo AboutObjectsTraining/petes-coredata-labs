@@ -9,6 +9,7 @@
 #import "RELReadingListController.h"
 #import "RELSampleBook.h"
 #import "RELViewBookController.h"
+#import "RELEditBookController.h"
 
 @interface RELReadingListController()
 @property (strong, nonatomic) NSMutableArray *sampleBooks;
@@ -33,9 +34,9 @@
 
 //load the books
 - (void)loadBooks {
-    [self.sampleBooks addObjectsFromArray:@[[[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Sorcerers Stone" authorName:@"JK Rowling"],
-                                            [[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Chamber of Secrets" authorName:@"JK Rowling"],
-                                            [[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Prisoner of Azkaban" authorName:@"JK Rowling"],
+    [self.sampleBooks addObjectsFromArray:@[[[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Sorcerers Stone" authorName:@"JK Rowling" bookYear:[NSNumber numberWithInt:1998]],
+                                            [[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Chamber of Secrets" authorName:@"JK Rowling" bookYear:[NSNumber numberWithInt:1994]],
+                                            [[RELSampleBook alloc] initWithTitle:@"Harry Potter & the Prisoner of Azkaban" authorName:@"JK Rowling" bookYear:[NSNumber numberWithInt:2004]],
                                             ]];
 }
 
@@ -61,8 +62,8 @@
 
 //other action methods
 - (IBAction)doneEditingBook:(UIStoryboardSegue *)segue {
+
     [self.tableView reloadData];
-    //save to data source
 }
 
 - (IBAction)doneAddingBook:(UIStoryboardSegue *)segue {
