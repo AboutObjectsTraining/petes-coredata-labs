@@ -14,17 +14,17 @@
 		F62D85522421718700605903 /* ReadingListModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D85422421718700605903 /* ReadingListModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F62D85552421718700605903 /* ReadingListModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62D85402421718700605903 /* ReadingListModel.framework */; };
 		F62D85562421718700605903 /* ReadingListModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F62D85402421718700605903 /* ReadingListModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F62D8563242267AE00605903 /* RLMAuthor.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D8561242267AE00605903 /* RLMAuthor.h */; };
+		F62D8563242267AE00605903 /* RLMAuthor.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D8561242267AE00605903 /* RLMAuthor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F62D8564242267AE00605903 /* RLMAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D8562242267AE00605903 /* RLMAuthor.m */; };
-		F62D856A2422684300605903 /* RLMBook.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D85682422684300605903 /* RLMBook.h */; };
+		F62D856A2422684300605903 /* RLMBook.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D85682422684300605903 /* RLMBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F62D856B2422684300605903 /* RLMBook.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D85692422684300605903 /* RLMBook.m */; };
-		F62D856E242269FA00605903 /* RLMModelObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D856C242269FA00605903 /* RLMModelObject.h */; };
+		F62D856E242269FA00605903 /* RLMModelObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D856C242269FA00605903 /* RLMModelObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F62D856F242269FA00605903 /* RLMModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D856D242269FA00605903 /* RLMModelObject.m */; };
-		F62D857224226A9E00605903 /* RLMReadingList.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D857024226A9E00605903 /* RLMReadingList.h */; };
+		F62D857224226A9E00605903 /* RLMReadingList.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D857024226A9E00605903 /* RLMReadingList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F62D857324226A9E00605903 /* RLMReadingList.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D857124226A9E00605903 /* RLMReadingList.m */; };
 		F62D857624226CB600605903 /* NSArray+RLMObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D857424226CB600605903 /* NSArray+RLMObjectMapping.h */; };
 		F62D857724226CB600605903 /* NSArray+RLMObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D857524226CB600605903 /* NSArray+RLMObjectMapping.m */; };
-		F62D857A2422730E00605903 /* RLMStoreController.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D85782422730E00605903 /* RLMStoreController.h */; };
+		F62D857A2422730E00605903 /* RLMStoreController.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D85782422730E00605903 /* RLMStoreController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F62D857B2422730E00605903 /* RLMStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D85792422730E00605903 /* RLMStoreController.m */; };
 		F9408A35241926EF003E3301 /* EditBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9408A34241926EF003E3301 /* EditBook.storyboard */; };
 		F9408A38241930DE003E3301 /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9408A37241930DE003E3301 /* RELEditBookController.m */; };
@@ -285,9 +285,9 @@
 				F62D856E242269FA00605903 /* RLMModelObject.h in Headers */,
 				F62D8563242267AE00605903 /* RLMAuthor.h in Headers */,
 				F62D857A2422730E00605903 /* RLMStoreController.h in Headers */,
-				F62D857624226CB600605903 /* NSArray+RLMObjectMapping.h in Headers */,
 				F62D857224226A9E00605903 /* RLMReadingList.h in Headers */,
 				F62D856A2422684300605903 /* RLMBook.h in Headers */,
+				F62D857624226CB600605903 /* NSArray+RLMObjectMapping.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

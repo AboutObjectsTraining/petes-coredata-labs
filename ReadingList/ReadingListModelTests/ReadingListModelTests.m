@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-//#import <ReadingListModel/ReadingListModel.h>
+#import <ReadingListModel/ReadingListModel.h>
 
 @interface ReadingListModelTests : XCTestCase
 @end
@@ -20,7 +20,8 @@
 }
 
 - (void)testExample {
-    
+    RLMAuthor *author = nil;
+    NSLog(@"%@", author);
     // Get the keys for the given values and NSLog 'em
 //    RLTAuthor *author = [RLTModelObject dictionaryWithValuesForKeys:[RLTAuthor keys]];
     // Get the values for the given keys and NSLog 'em
