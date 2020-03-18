@@ -16,4 +16,8 @@ FOUNDATION_EXPORT const unsigned char ReadingListModelVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ReadingListModel/PublicHeader.h>
 
-
+#import <ReadingListModel/RLMModelObject.h>
+#import <ReadingListModel/RLMAuthor.h>
+#import <ReadingListModel/RLMBook.h>
+#import <ReadingListModel/RLMReadingList.h>
+#import <ReadingListModel/RLMStoreController.h>

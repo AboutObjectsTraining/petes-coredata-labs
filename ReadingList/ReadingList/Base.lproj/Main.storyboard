@@ -224,7 +224,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="168"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anon" translatesAutoresizingMaskIntoConstraints="NO" id="xia-4H-eah">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rowling" translatesAutoresizingMaskIntoConstraints="NO" id="xia-4H-eah">
                                                     <rect key="frame" x="143" y="20" width="128" height="128"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="128" id="9bs-vd-rX5"/>
@@ -293,7 +293,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="anon" width="512" height="512"/>
+        <image name="rowling" width="769" height="1039"/>
         <namedColor name="Alternate Cell Color">
             <color red="0.93333333333333335" green="0.93333333333333335" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

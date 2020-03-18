@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+@import ReadingListModel;
 
 @interface ReadingListModelTests : XCTestCase
 
@@ -15,23 +16,23 @@
 @implementation ReadingListModelTests
 
 - (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    // Create author object
+    RLMAuthor *author = ;
+    //modelObjectWithDictionary call
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    // Get the keys for the given values and NSLog 'em
+    
+    // Get the values for the given keys and NSLog 'em
+    
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
+//NSDictionary *dictionary = @{
+//    @"name" : NSUserName(),
+//    @"date" : [NSDate date],
+//    @"processInfo" : [NSProcessInfo processInfo]
+//};    A dictionary literal
 
 @end
