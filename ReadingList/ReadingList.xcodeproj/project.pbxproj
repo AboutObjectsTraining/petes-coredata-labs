@@ -107,8 +107,6 @@
 		F62D857524226CB600605903 /* NSArray+RLMObjectMapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RLMObjectMapping.m"; sourceTree = "<group>"; };
 		F62D85782422730E00605903 /* RLMStoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLMStoreController.h; sourceTree = "<group>"; };
 		F62D85792422730E00605903 /* RLMStoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLMStoreController.m; sourceTree = "<group>"; };
-		F6E1E46E2422B3CB002FCC6F /* bobbish.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bobbish.m; sourceTree = "<group>"; };
-		F6E1E4702422B3CB002FCC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9408A34241926EF003E3301 /* EditBook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditBook.storyboard; sourceTree = "<group>"; };
 		F9408A36241930DE003E3301 /* RELEditBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELEditBookController.h; sourceTree = "<group>"; };
 		F9408A37241930DE003E3301 /* RELEditBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELEditBookController.m; sourceTree = "<group>"; };
@@ -201,15 +199,6 @@
 			path = ReadingListModelTests;
 			sourceTree = "<group>";
 		};
-		F6E1E46D2422B3CB002FCC6F /* bobbish */ = {
-			isa = PBXGroup;
-			children = (
-				F6E1E46E2422B3CB002FCC6F /* bobbish.m */,
-				F6E1E4702422B3CB002FCC6F /* Info.plist */,
-			);
-			path = bobbish;
-			sourceTree = "<group>";
-		};
 		F9A6C6392416BCA7006056F3 = {
 			isa = PBXGroup;
 			children = (
@@ -217,7 +206,6 @@
 				F9A6C65D2416CA22006056F3 /* ReadingListModelDEPRECATED */,
 				F62D85412421718700605903 /* ReadingListModel */,
 				F62D854E2421718700605903 /* ReadingListModelTests */,
-				F6E1E46D2422B3CB002FCC6F /* bobbish */,
 				F9A6C6432416BCA7006056F3 /* Products */,
 			);
 			sourceTree = "<group>";
