@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F60E79CA2422963D003237CD /* RLTAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = F60E79C92422963D003237CD /* RLTAuthor.m */; };
-		F60E79CD2422A5EC003237CD /* RLTModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F60E79CC2422A5EC003237CD /* RLTModelObject.m */; };
 		F62D85492421718700605903 /* ReadingListModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62D85402421718700605903 /* ReadingListModel.framework */; };
 		F62D85502421718700605903 /* ReadingListModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D854F2421718700605903 /* ReadingListModelTests.m */; };
 		F62D85522421718700605903 /* ReadingListModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D85422421718700605903 /* ReadingListModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -85,10 +83,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F60E79C82422963D003237CD /* RLTAuthor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLTAuthor.h; sourceTree = "<group>"; };
-		F60E79C92422963D003237CD /* RLTAuthor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLTAuthor.m; sourceTree = "<group>"; };
-		F60E79CB2422A5EC003237CD /* RLTModelObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLTModelObject.h; sourceTree = "<group>"; };
-		F60E79CC2422A5EC003237CD /* RLTModelObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLTModelObject.m; sourceTree = "<group>"; };
 		F62D85402421718700605903 /* ReadingListModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReadingListModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62D85422421718700605903 /* ReadingListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadingListModel.h; sourceTree = "<group>"; };
 		F62D85432421718700605903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -190,10 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				F62D854F2421718700605903 /* ReadingListModelTests.m */,
-				F60E79C82422963D003237CD /* RLTAuthor.h */,
-				F60E79C92422963D003237CD /* RLTAuthor.m */,
-				F60E79CB2422A5EC003237CD /* RLTModelObject.h */,
-				F60E79CC2422A5EC003237CD /* RLTModelObject.m */,
 				F62D85512421718700605903 /* Info.plist */,
 			);
 			path = ReadingListModelTests;
@@ -427,9 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F60E79CD2422A5EC003237CD /* RLTModelObject.m in Sources */,
 				F62D85502421718700605903 /* ReadingListModelTests.m in Sources */,
-				F60E79CA2422963D003237CD /* RLTAuthor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R6CF59GRY;
 				INFOPLIST_FILE = ReadingListModelTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -568,6 +557,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R6CF59GRY;
 				INFOPLIST_FILE = ReadingListModelTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (

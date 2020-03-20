@@ -27,6 +27,7 @@
     self.yearLabel.text = self.book.bookYear.stringValue;
     self.firstNameLabel.text = self.book.authorFirstName;
     self.lastNameLabel.text = self.book.authorLastName;
+    self.imageView.image = [UIImage imageNamed:self.book.authorLastName ?: @"anon" ];
 }
 
 //goes to edit scene
