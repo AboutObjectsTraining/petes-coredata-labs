@@ -9,9 +9,18 @@
 #import "RLMStoreController.h"
 #import "RLMReadingList.h"
 
+//takes in document name and file type
 NSString *RELPathForDocument(NSString *name, NSString *type)
 {
+    //create an array of search paths in NSSearchPathDirectory in the domain mask given
+    //bool is a tilde expander which means it gives the entire path
+    
+    //this domain mask is (in this case) the user's home directory. its called a mask bc it hides
+    //the actual name of the directory path
+
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    //returns the last object in the paths array, appended by that object's file type
     return [[paths.lastObject stringByAppendingPathComponent:name] stringByAppendingPathExtension:type];
 }
 
