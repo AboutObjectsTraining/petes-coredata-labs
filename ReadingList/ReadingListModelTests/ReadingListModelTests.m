@@ -32,29 +32,23 @@
     NSDictionary *bookDictionary = [book dictionaryRepresentation];
 
     NSString *bookf = [book description];
+    NSEnumerator *enumerator = [bookDictionary keyEnumerator];
     NSLog(@"Description: %@", bookf);
 
     NSLog(@"Author keys: %@ %@", authorDictionary.allKeys.firstObject, authorDictionary.allKeys.lastObject);
-    NSLog(@"Book keys: %@", bookDictionary.allKeys);
+    NSLog(@"Book keys: %@ %@ %@", [enumerator nextObject], [enumerator nextObject], [enumerator nextObject]);
     
     NSLog(@"Author name: %@ %@", authorDictionary.allValues.firstObject, authorDictionary.allValues.lastObject);
     NSLog(@"Book %@: %@", bookDictionary.allKeys.firstObject, bookDictionary.allValues.firstObject);
     
-    NSLog(@"The Author: %@ wrote %@", author2Dictionary.allValues.firstObject, book2.dictionaryRepresentation);
+    NSLog(@"The Author %@ wrote %@", author2Dictionary.allValues.firstObject, book2.title);
     
 }
 
 // To Do:
 // • Fix error "Class RLMAuthor is implemented in both" .?
 //      ** Maybe recreate the test class?
-
-// • Format nested dictionaries
-// • Make it so that there can be multiple authors
-// • Add image property (import image assets named after author's surname
 // • Stare at store controller code, write some test cases
 
-// • Make this test run without running the simulator
-//      ** I tried to set the active scheme to My Mac but then
-//      ** it loses the framework ReadingListModel :/
 
 @end
