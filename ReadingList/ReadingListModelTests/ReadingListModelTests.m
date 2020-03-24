@@ -18,13 +18,17 @@
     RLMAuthor *author = [[RLMAuthor alloc] initWithDictionary:@{@"firstName" : @"John", @"lastName" : @"Doe"}];
     RLMAuthor *author2 = [[RLMAuthor alloc] initWithDictionary:@{@"firstName" : @"Arthur", @"lastName" : @"Arthur"}];
     
-    
     RLMBook *book = [[RLMBook alloc] initWithDictionary:@{@"title" : @"My Average Life",
                                                           @"year"  : @"1991",
                                                           @"author": author}];
     RLMBook *book2 = [[RLMBook alloc] initWithDictionary:@{@"title" : @"Chasing Salmon",
                                                           @"year"  : @"1919",
                                                           @"author": author2}];
+    
+    NSString *fileName = @"Test";
+    NSString *fileType = @"rtf";
+    //this gives the path for the simulator created document..? it stores it in the simulator..?
+    NSLog(@"Path for document: %@", RELPathForDocument(fileName, fileType));
     
     NSDictionary *authorDictionary = [author dictionaryRepresentation];
     NSDictionary *author2Dictionary = [author2 dictionaryRepresentation];
@@ -41,7 +45,7 @@
     NSLog(@"Author name: %@ %@", authorDictionary.allValues.firstObject, authorDictionary.allValues.lastObject);
     NSLog(@"Book %@: %@", bookDictionary.allKeys.firstObject, bookDictionary.allValues.firstObject);
     
-    NSLog(@"The Author %@ wrote %@", author2Dictionary.allValues.firstObject, book2.title);
+    NSLog(@"The author %@ wrote %@", author2Dictionary.allValues.firstObject, book2.title);
     
 }
 

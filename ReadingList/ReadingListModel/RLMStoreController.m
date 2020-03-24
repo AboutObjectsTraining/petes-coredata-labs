@@ -24,16 +24,19 @@ NSString *RELPathForDocument(NSString *name, NSString *type)
     return [[paths.lastObject stringByAppendingPathComponent:name] stringByAppendingPathExtension:type];
 }
 
-
+//the store is called ReadingList
 NSString * const defaultStoreName = @"ReadingList";
 
 @implementation RLMStoreController
 
 - (NSString *)storeType { return @"plist"; }
 - (NSString *)storeName { return defaultStoreName; }
+//creates the path for the plist bundle created
 - (NSString *)bundlePath { return [[NSBundle bundleForClass:self.class] pathForResource:self.storeName ofType:self.storeType]; }
+//creates a ReadingList.plist full path string so that a dictionary object (created in fetchedReadingList) can use stored data
 - (NSString *)storePath {
     NSString *path = RELPathForDocument(self.storeName, self.storeType);
+    //lazily creates our store path
     if (![NSFileManager.defaultManager fileExistsAtPath:path]) {
         [NSFileManager.defaultManager copyItemAtPath:self.bundlePath toPath:path error:nil];
     }
