@@ -25,6 +25,7 @@
     self.yearField.text = self.book.bookYear.stringValue;
     self.firstNameField.text = self.book.authorFirstName;
     self.lastNameField.text = self.book.authorLastName;
+    self.tableView.rowHeight = 44;
 }
 
 - (void)updateBook {
