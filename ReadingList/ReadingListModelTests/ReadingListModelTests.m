@@ -10,9 +10,61 @@
 #import <ReadingListModel/ReadingListModel.h>
 
 @interface ReadingListModelTests : XCTestCase
+@property (readonly, nonatomic) NSDictionary *authors;
+@property (readonly, nonatomic) NSDictionary *books;
 @end
 
 @implementation ReadingListModelTests
+
+- (NSDictionary *)authors {
+    return @{
+        RLMAuthorKeys.firstName : @"Charles",
+        RLMAuthorKeys.lastName : @"Sangster"
+    };
+}
+
+- (NSDictionary *)books {
+    return @{
+        RLMBookKeys.title : @"Hesperus",
+        RLMBookKeys.year : @"2008",
+        RLMBookKeys.author : self.authors
+    };
+}
+
+- (void)testCreateAuthor {
+    RLMAuthor *author = [RLMAuthor modelObjectWithDictionary:self.authors];
+    NSLog(@"%@", author);
+}
+
+- (void)testCreateBook {
+    RLMBook *book = [RLMBook modelObjectWithDictionary:self.books];
+    NSLog(@"%@", book.author);
+    NSLog(@"%@", book);
+}
+
+- (void)testLoadPlist {
+    NSBundle *bundle = [NSBundle bundleForClass:RLMBook.class];
+    NSString *path = [bundle pathForResource:@"ReadingList" ofType:@"plist"];
+    NSLog(@"%@", path);
+    
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    NSLog(@"%@", dict);
+}
+
+- (void)testCreateReadingList {
+    NSBundle *bundle = [NSBundle bundleForClass:RLMBook.class];
+    NSString *path = [bundle pathForResource:@"ReadingList" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    
+    RLMReadingList *readingList = [RLMReadingList modelObjectWithDictionary:dict];
+    NSLog(@"%@", readingList);
+}
+
+- (void)testStoreController {
+    RLMStoreController *storeController = [[RLMStoreController alloc] init];
+    RLMReadingList *readingList = storeController.fetchedReadingList;
+    NSLog(@"%@", readingList);
+}
 
 - (void)testModelObjectDictionaries {
     RLMAuthor *author = [[RLMAuthor alloc] initWithDictionary:@{@"firstName" : @"John", @"lastName" : @"Doe"}];

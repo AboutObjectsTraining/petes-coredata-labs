@@ -25,6 +25,7 @@
 		F62D857A2422730E00605903 /* RLMStoreController.h in Headers */ = {isa = PBXBuildFile; fileRef = F62D85782422730E00605903 /* RLMStoreController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F62D857B2422730E00605903 /* RLMStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D85792422730E00605903 /* RLMStoreController.m */; };
 		F6D005D52432403C00676BF3 /* RELReadingListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D005D42432403C00676BF3 /* RELReadingListDataSource.m */; };
+		F6E74DF6243CCF3400DA2D16 /* ReadingList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6E74DF5243CCF3400DA2D16 /* ReadingList.plist */; };
 		F9408A35241926EF003E3301 /* EditBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9408A34241926EF003E3301 /* EditBook.storyboard */; };
 		F9408A38241930DE003E3301 /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9408A37241930DE003E3301 /* RELEditBookController.m */; };
 		F9907F1B241BD685001D19C9 /* RELReadingListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9907F1A241BD685001D19C9 /* RELReadingListController.m */; };
@@ -104,6 +105,7 @@
 		F62D85792422730E00605903 /* RLMStoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLMStoreController.m; sourceTree = "<group>"; };
 		F6D005D32432403C00676BF3 /* RELReadingListDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELReadingListDataSource.h; sourceTree = "<group>"; };
 		F6D005D42432403C00676BF3 /* RELReadingListDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELReadingListDataSource.m; sourceTree = "<group>"; };
+		F6E74DF5243CCF3400DA2D16 /* ReadingList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ReadingList.plist; sourceTree = "<group>"; };
 		F9408A34241926EF003E3301 /* EditBook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditBook.storyboard; sourceTree = "<group>"; };
 		F9408A36241930DE003E3301 /* RELEditBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELEditBookController.h; sourceTree = "<group>"; };
 		F9408A37241930DE003E3301 /* RELEditBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELEditBookController.m; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		F62D85412421718700605903 /* ReadingListModel */ = {
 			isa = PBXGroup;
 			children = (
+				F6E74DF5243CCF3400DA2D16 /* ReadingList.plist */,
 				F62D857424226CB600605903 /* NSArray+RLMObjectMapping.h */,
 				F62D857524226CB600605903 /* NSArray+RLMObjectMapping.m */,
 				F62D85422421718700605903 /* ReadingListModel.h */,
@@ -379,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E74DF6243CCF3400DA2D16 /* ReadingList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
