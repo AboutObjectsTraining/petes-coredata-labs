@@ -55,7 +55,6 @@
 // • Stare at store controller code, write some test cases
 // • The name data is not changed
 // • No data is stored (saved)
-// • Start picking at these error logs
 
 
 @end
