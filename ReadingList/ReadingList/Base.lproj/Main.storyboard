@@ -97,7 +97,7 @@
                     <navigationItem key="navigationItem" title="Reading List" id="W1p-dn-ju1">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="cMC-Bv-hb6">
                             <connections>
-                                <segue destination="iI2-ut-WHH" kind="presentation" id="Ecj-qw-KNi"/>
+                                <segue destination="iI2-ut-WHH" kind="presentation" identifier="Add Book" id="Ecj-qw-KNi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -8,11 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class RELSampleBook;
+@class RLMBook;
 
 @interface RELViewBookController : UITableViewController
-
-@property (strong, nonatomic) RELSampleBook *book;
-
+@property (strong, nonatomic) RLMBook *book;
 @end
 

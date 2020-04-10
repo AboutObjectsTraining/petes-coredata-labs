@@ -66,6 +66,8 @@
     NSLog(@"%@", readingList);
 }
 
+
+
 - (void)testModelObjectDictionaries {
     RLMAuthor *author = [[RLMAuthor alloc] initWithDictionary:@{@"firstName" : @"John", @"lastName" : @"Doe"}];
     RLMAuthor *author2 = [[RLMAuthor alloc] initWithDictionary:@{@"firstName" : @"Arthur", @"lastName" : @"Arthur"}];

@@ -8,9 +8,11 @@
 
 #import "RELAppDelegate.h"
 
+@interface RELAppDelegate ()
+
+@end
+
+
 @implementation RELAppDelegate
-
-// methods for configuring visual attributes of the UI
-
 
 @end

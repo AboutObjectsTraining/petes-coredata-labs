@@ -8,17 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class RELSampleBook;
-
 @interface RELReadingListController : UITableViewController
-@property(nonatomic, retain) RELSampleBook *sampleBook;
-@end
 
-@interface OLDReadingListController : UITableViewController
-@property(nonatomic, retain) RELSampleBook *sampleBook;
-@end
-
-@interface OLDERReadingListController : UITableViewController
-@property(nonatomic, retain) RELSampleBook *sampleBook;
 @end
 

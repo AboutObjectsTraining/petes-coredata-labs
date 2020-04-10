@@ -8,7 +8,7 @@
 
 #import "RELViewBookController.h"
 #import "RELEditBookController.h"
-#import "RELSampleBook.h"
+#import <ReadingListModel/ReadingListModel.h>
 
 @interface RELViewBookController ()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -23,14 +23,15 @@
 - (void)viewWillAppear:(BOOL)animated
 {    
     [super viewWillAppear:animated];
-    self.titleLabel.text = self.book.bookTitle;
-    self.yearLabel.text = self.book.bookYear.stringValue;
-    self.firstNameLabel.text = self.book.authorFirstName;
-    self.lastNameLabel.text = self.book.authorLastName;
-    self.imageView.image = [UIImage imageNamed:self.book.authorLastName ?: @"anon" ];
+    self.titleLabel.text = self.book.title;
+    self.yearLabel.text = self.book.year;
+    self.firstNameLabel.text = self.book.author.firstName;
+    self.lastNameLabel.text = self.book.author.lastName;
+    
+    UIImage *image = [UIImage imageNamed:self.book.author.lastName];
+    self.imageView.image = image != nil ? image: [UIImage imageNamed:@"anon"];
 }
 
-//goes to edit scene
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     UINavigationController *navController = segue.destinationViewController;
@@ -39,6 +40,7 @@
     
 }
 
+// MARK: Unwind segues
 - (IBAction)cancelEditingBook:(UIStoryboardSegue *)segue {
     
 }
