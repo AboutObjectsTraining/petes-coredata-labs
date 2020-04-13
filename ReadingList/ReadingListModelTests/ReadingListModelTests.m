@@ -50,7 +50,13 @@
 
 //TODO:- Load current reading list, add the new book, compare the count change
 - (void)testChangeTollsToClangs{
-
+    RLMBook *book = [RLMBook modelObjectWithDictionary:self.bookDictionary];
+    book.title = @"For Whom the Bell Clangs";
+    [self.readingList insertBook:book atIndexPath:[NSIndexPath indexPathWithIndex:1]];
+    [self.storeController saveReadingList:self.readingList];
+    NSLog(@"%@", book.author.fullName);
+    NSLog(@"%@", book.title);
+    XCTAssertEqual(self.readingList.books.count, self.storeController.fetchedReadingList.books.count);
 }
 
 - (void)testLoadPlist {
