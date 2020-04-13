@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F61F481A2440E3FB0006E2AE /* UIStoryboard+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F61F48192440E3FB0006E2AE /* UIStoryboard+RELAdditions.m */; };
 		F61F481D2440E6730006E2AE /* UIStoryboardSegue+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F61F481C2440E6730006E2AE /* UIStoryboardSegue+RELAdditions.m */; };
 		F62D85492421718700605903 /* ReadingListModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62D85402421718700605903 /* ReadingListModel.framework */; };
 		F62D85502421718700605903 /* ReadingListModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F62D854F2421718700605903 /* ReadingListModelTests.m */; };
@@ -82,7 +81,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F61F48192440E3FB0006E2AE /* UIStoryboard+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+RELAdditions.m"; sourceTree = "<group>"; };
 		F61F481B2440E6730006E2AE /* UIStoryboardSegue+RELAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+RELAdditions.h"; sourceTree = "<group>"; };
 		F61F481C2440E6730006E2AE /* UIStoryboardSegue+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+RELAdditions.m"; sourceTree = "<group>"; };
 		F62D85402421718700605903 /* ReadingListModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReadingListModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,7 +218,6 @@
 				F9408A37241930DE003E3301 /* RELEditBookController.m */,
 				F61F481B2440E6730006E2AE /* UIStoryboardSegue+RELAdditions.h */,
 				F61F481C2440E6730006E2AE /* UIStoryboardSegue+RELAdditions.m */,
-				F61F48192440E3FB0006E2AE /* UIStoryboard+RELAdditions.m */,
 				F6B528B52440D55C00C91FA6 /* UIColor+RELAppearance.h */,
 				F6B528B62440D55C00C91FA6 /* UIColor+RELAppearance.m */,
 				F9A6C6612416CDD3006056F3 /* RELReadingListController.h */,
@@ -420,7 +417,6 @@
 				F9A6C64A2416BCA7006056F3 /* RELViewBookController.m in Sources */,
 				F9408A38241930DE003E3301 /* RELEditBookController.m in Sources */,
 				F9A6C6552416BCAF006056F3 /* main.m in Sources */,
-				F61F481A2440E3FB0006E2AE /* UIStoryboard+RELAdditions.m in Sources */,
 				F9E54D2524195EDB00F4A206 /* RELAddBookController.m in Sources */,
 				F6B528B72440D55C00C91FA6 /* UIColor+RELAppearance.m in Sources */,
 				F6D005D52432403C00676BF3 /* RELReadingListDataSource.m in Sources */,

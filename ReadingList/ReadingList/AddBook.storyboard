@@ -126,11 +126,13 @@
                     <navigationItem key="navigationItem" title="Add Book" id="GbJ-FY-3PF">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="9pn-8z-O4D">
                             <connections>
+                                <action selector="cancel:" destination="rrr-tg-ks6" id="hO9-e7-kg1"/>
                                 <segue destination="TNw-NN-p5a" kind="unwind" unwindAction="cancelAddingBook:" id="pdg-AD-dRz"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Done" id="Pmy-B7-x08">
                             <connections>
+                                <action selector="done:" destination="rrr-tg-ks6" id="5G5-LS-PcX"/>
                                 <segue destination="TNw-NN-p5a" kind="unwind" unwindAction="doneAddingBook:" id="uPu-az-LJY"/>
                             </connections>
                         </barButtonItem>

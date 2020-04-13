@@ -47,4 +47,12 @@
     }
 }
 
+- (IBAction)done:(UIStoryboardSegue *)segue {
+    [self.tableView reloadData];
+    //add data to store
+    
+}
+
+- (IBAction)cancel:(UIStoryboardSegue *)segue {
+}
 @end
