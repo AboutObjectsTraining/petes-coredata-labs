@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B44A67DD24368EBF00809825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44A67DC24368EBF00809825 /* Assets.xcassets */; };
+		B44A67E024368EBF00809825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44A67DE24368EBF00809825 /* LaunchScreen.storyboard */; };
+		B44A67E324368EBF00809825 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B44A67E224368EBF00809825 /* main.m */; };
+		B44A67FB24368F5400809825 /* CLNCoolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B44A67F424368F5400809825 /* CLNCoolViewCell.m */; };
+		B44A67FC24368F5400809825 /* CLNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B44A67F624368F5400809825 /* CLNAppDelegate.m */; };
+		B44A67FD24368F5400809825 /* CLNCoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44A67F824368F5400809825 /* CLNCoolViewController.m */; };
+		B44A67FE24368F5400809825 /* CoolStuff.xib in Resources */ = {isa = PBXBuildFile; fileRef = B44A67F924368F5400809825 /* CoolStuff.xib */; };
+		B44A68012436915200809825 /* CLNCoolView.m in Sources */ = {isa = PBXBuildFile; fileRef = B44A68002436915200809825 /* CLNCoolView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B44A67CD24368EBD00809825 /* Coolness3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coolness3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44A67DC24368EBF00809825 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B44A67DF24368EBF00809825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B44A67E124368EBF00809825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44A67E224368EBF00809825 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B44A67F424368F5400809825 /* CLNCoolViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewCell.m; sourceTree = "<group>"; };
+		B44A67F524368F5400809825 /* CLNCoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNCoolViewController.h; sourceTree = "<group>"; };
+		B44A67F624368F5400809825 /* CLNAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNAppDelegate.m; sourceTree = "<group>"; };
+		B44A67F724368F5400809825 /* CLNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNAppDelegate.h; sourceTree = "<group>"; };
+		B44A67F824368F5400809825 /* CLNCoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewController.m; sourceTree = "<group>"; };
+		B44A67F924368F5400809825 /* CoolStuff.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoolStuff.xib; sourceTree = "<group>"; };
+		B44A67FA24368F5400809825 /* CLNCoolViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNCoolViewCell.h; sourceTree = "<group>"; };
+		B44A67FF2436915200809825 /* CLNCoolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNCoolView.h; sourceTree = "<group>"; };
+		B44A68002436915200809825 /* CLNCoolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNCoolView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B44A67CA24368EBD00809825 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B44A67C424368EBD00809825 = {
+			isa = PBXGroup;
+			children = (
+				B44A67CF24368EBD00809825 /* Coolness3 */,
+				B44A67CE24368EBD00809825 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B44A67CE24368EBD00809825 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B44A67CD24368EBD00809825 /* Coolness3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B44A67CF24368EBD00809825 /* Coolness3 */ = {
+			isa = PBXGroup;
+			children = (
+				B44A67F724368F5400809825 /* CLNAppDelegate.h */,
+				B44A67F624368F5400809825 /* CLNAppDelegate.m */,
+				B44A67FA24368F5400809825 /* CLNCoolViewCell.h */,
+				B44A67F424368F5400809825 /* CLNCoolViewCell.m */,
+				B44A67FF2436915200809825 /* CLNCoolView.h */,
+				B44A68002436915200809825 /* CLNCoolView.m */,
+				B44A67F524368F5400809825 /* CLNCoolViewController.h */,
+				B44A67F824368F5400809825 /* CLNCoolViewController.m */,
+				B44A67F924368F5400809825 /* CoolStuff.xib */,
+				B44A67DC24368EBF00809825 /* Assets.xcassets */,
+				B44A67DE24368EBF00809825 /* LaunchScreen.storyboard */,
+				B44A67E124368EBF00809825 /* Info.plist */,
+				B44A67E224368EBF00809825 /* main.m */,
+			);
+			path = Coolness3;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B44A67CC24368EBD00809825 /* Coolness3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44A67E624368EBF00809825 /* Build configuration list for PBXNativeTarget "Coolness3" */;
+			buildPhases = (
+				B44A67C924368EBD00809825 /* Sources */,
+				B44A67CA24368EBD00809825 /* Frameworks */,
+				B44A67CB24368EBD00809825 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Coolness3;
+			productName = Coolness3;
+			productReference = B44A67CD24368EBD00809825 /* Coolness3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B44A67C524368EBD00809825 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "About Objects";
+				TargetAttributes = {
+					B44A67CC24368EBD00809825 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B44A67C824368EBD00809825 /* Build configuration list for PBXProject "Coolness3" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B44A67C424368EBD00809825;
+			productRefGroup = B44A67CE24368EBD00809825 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B44A67CC24368EBD00809825 /* Coolness3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B44A67CB24368EBD00809825 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44A67E024368EBF00809825 /* LaunchScreen.storyboard in Resources */,
+				B44A67DD24368EBF00809825 /* Assets.xcassets in Resources */,
+				B44A67FE24368F5400809825 /* CoolStuff.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B44A67C924368EBD00809825 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44A68012436915200809825 /* CLNCoolView.m in Sources */,
+				B44A67FC24368F5400809825 /* CLNAppDelegate.m in Sources */,
+				B44A67E324368EBF00809825 /* main.m in Sources */,
+				B44A67FB24368F5400809825 /* CLNCoolViewCell.m in Sources */,
+				B44A67FD24368F5400809825 /* CLNCoolViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B44A67DE24368EBF00809825 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B44A67DF24368EBF00809825 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B44A67E424368EBF00809825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B44A67E524368EBF00809825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B44A67E724368EBF00809825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Coolness3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.Coolness3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B44A67E824368EBF00809825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Coolness3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.Coolness3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B44A67C824368EBD00809825 /* Build configuration list for PBXProject "Coolness3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44A67E424368EBF00809825 /* Debug */,
+				B44A67E524368EBF00809825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44A67E624368EBF00809825 /* Build configuration list for PBXNativeTarget "Coolness3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44A67E724368EBF00809825 /* Debug */,
+				B44A67E824368EBF00809825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B44A67C524368EBD00809825 /* Project object */;
+}

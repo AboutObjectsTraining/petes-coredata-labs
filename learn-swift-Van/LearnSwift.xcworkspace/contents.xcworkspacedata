@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:/Users/rvs/Development/Projects/HarvardExtension/learn-swift/README.md">
+   </FileRef>
+   <FileRef
+      location = "group:01a. The Basics.playground">
+   </FileRef>
+   <FileRef
+      location = "group:01b. Type alliases.playground">
+   </FileRef>
+   <FileRef
+      location = "group:01c. Tuples.playground">
+   </FileRef>
+   <FileRef
+      location = "group:01d. Optionals.playground">
+   </FileRef>
+   <FileRef
+      location = "group:01e. Assertions.playground">
+   </FileRef>
+   <FileRef
+      location = "group:02. Basic Operators.playground">
+   </FileRef>
+   <FileRef
+      location = "group:03. Strings and Characters.playground">
+   </FileRef>
+   <FileRef
+      location = "group:04a. Arrays.playground">
+   </FileRef>
+   <FileRef
+      location = "group:04b. Dictionaries.playground">
+   </FileRef>
+   <FileRef
+      location = "group:05. Control Flow.playground">
+   </FileRef>
+   <FileRef
+      location = "group:06. Functions.playground">
+   </FileRef>
+   <FileRef
+      location = "group:07. Closures.playground">
+   </FileRef>
+   <FileRef
+      location = "group:08. Enumerations.playground">
+   </FileRef>
+   <FileRef
+      location = "group:09. Classes and Structures.playground">
+   </FileRef>
+   <FileRef
+      location = "group:10. Properties.playground">
+   </FileRef>
+   <FileRef
+      location = "group:11. Methods.playground">
+   </FileRef>
+   <FileRef
+      location = "group:12. Subscripts.playground">
+   </FileRef>
+   <FileRef
+      location = "group:13. Inheritance.playground">
+   </FileRef>
+   <FileRef
+      location = "group:14a. Initialization.playground">
+   </FileRef>
+   <FileRef
+      location = "group:14b. Initializer Chaining.playground">
+   </FileRef>
+   <FileRef
+      location = "group:15. Deinitialization.playground">
+   </FileRef>
+   <FileRef
+      location = "group:16. ARC.playground">
+   </FileRef>
+   <FileRef
+      location = "group:17. Optional Chaining.playground">
+   </FileRef>
+   <FileRef
+      location = "group:18. Type Casting.playground">
+   </FileRef>
+   <FileRef
+      location = "group:19. Nested Types.playground">
+   </FileRef>
+   <FileRef
+      location = "group:20. Extensions.playground">
+   </FileRef>
+   <FileRef
+      location = "group:21. Protocols.playground">
+   </FileRef>
+   <FileRef
+      location = "group:22. Generics.playground">
+   </FileRef>
+   <FileRef
+      location = "group:23. Advanced Operators.playground">
+   </FileRef>
+   <FileRef
+      location = "group:24. Try, Catch, Defer, Throws.playground">
+   </FileRef>
+   <FileRef
+      location = "group:25. Equatable Hashable and Comparable.playground">
+   </FileRef>
+   <FileRef
+      location = "container:26. Algebraic Data Types.playground">
+   </FileRef>
+   <FileRef
+      location = "container:27. Higher Order Functions I.playground">
+   </FileRef>
+   <FileRef
+      location = "container:28. Combine I - The Basics.playground">
+   </FileRef>
+   <FileRef
+      location = "container:29. Higher Order Functions II.playground">
+   </FileRef>
+   <FileRef
+      location = "container:30. Higher Order Functions III.playground">
+   </FileRef>
+   <FileRef
+      location = "container:31. Combine II - Error Handling.playground">
+   </FileRef>
+   <FileRef
+      location = "container:32. Combine III - Networking.playground">
+   </FileRef>
+   <FileRef
+      location = "container:33. Combine IV - Timers.playground">
+   </FileRef>
+   <FileRef
+      location = "container:34. Combine V - Property Wrappers.playground">
+   </FileRef>
+   <FileRef
+      location = "container:35. App Architecture I - Principles.playground">
+   </FileRef>
+</Workspace>
