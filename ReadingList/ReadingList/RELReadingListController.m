@@ -10,8 +10,9 @@
 #import "RELViewBookController.h"
 #import "RELAddBookController.h"
 #import "RELEditBookController.h"
+#import "RELReadingListDataSource.h"
 #import "UIStoryboardSegue+RELAdditions.h"
-#import "ReadingListModel.h"
+#import <ReadingListModel/ReadingListModel.h>
 
 @class RLMStoreController;
 
@@ -25,7 +26,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.window.tintColor = [UIColor colorNamed:@"Tint Color"];
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 //create reading list, lazily
@@ -49,7 +49,6 @@
         };
     } else {
         NSLog(@"Unexpected segue with identifier: %@", segue.identifier);
-        //what's this do?
         abort();
     }
 }
@@ -58,7 +57,6 @@
 - (IBAction)done:(UIStoryboardSegue *)segue {
     [self.tableView reloadData];
     [self.storeController saveReadingList:self.readingList];
-    
 }
 
 - (IBAction)cancel:(UIStoryboardSegue *)segue {
@@ -66,8 +64,12 @@
 
 //MARK: - UITableViewDataSource Methods
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.readingList.books.count;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:(indexPath.row % 2 == 0) ? @"Even" : @"Odd"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Book Cell"];
     RLMBook *book = [self.readingList bookAtIndexPath:indexPath];
     cell.textLabel.text = book.title;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@", book.year, book.author.fullName];

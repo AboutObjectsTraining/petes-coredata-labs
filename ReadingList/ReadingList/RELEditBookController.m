@@ -7,7 +7,7 @@
 //
 
 #import "RELEditBookController.h"
-#import "ReadingListModel.h"
+#import <ReadingListModel/ReadingListModel.h>
 
 @interface RELEditBookController ()
 @property (weak, nonatomic) IBOutlet UITextField *titleField;

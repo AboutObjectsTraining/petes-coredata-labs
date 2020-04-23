@@ -5,6 +5,20 @@
 	<key>title</key>
 	<string>Quarantine Reading</string>
 	<key>books</key>
-	<array/>
+	<array>
+		<dict>
+			<key>author</key>
+			<dict>
+				<key>firstName</key>
+				<string>Ernest</string>
+				<key>lastName</key>
+				<string>Hemingway</string>
+			</dict>
+			<key>title</key>
+			<string>For Whom the Bell Tolls</string>
+			<key>year</key>
+			<string>1951</string>
+		</dict>
+	</array>
 </dict>
 </plist>

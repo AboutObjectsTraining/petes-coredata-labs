@@ -79,8 +79,7 @@
 
 - (void)testStoreController {
     RLMStoreController *storeController = [[RLMStoreController alloc] init];
-    RLMReadingList *readingList = storeController.fetchedReadingList;
-    NSLog(@"%@", readingList);
+    NSLog(@"%@", storeController.fetchedReadingList);
 }
 
 @end
